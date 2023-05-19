@@ -8,7 +8,7 @@ export const Router = (_props: any) => {
         <>
             <BrowserRouter>
                 <Header />
-                <Box className="pt-12">
+                <Box>
                     <Routes>
                         <Route path="/" element={<Navigate to="/welcome" />} />
                         <Route path="/welcome" element={<Welcome />} />

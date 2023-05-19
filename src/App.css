@@ -1,0 +1,15 @@
+/* scroll bar style */
+::-webkit-scrollbar {
+    width: 9px;
+    height: 9px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: hsl(199, 100%, 25%);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: hsl(199, 100%, 20%);
+}
