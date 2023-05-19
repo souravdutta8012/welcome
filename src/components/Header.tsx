@@ -6,7 +6,10 @@ export default function Header() {
             <AppBar>
                 <Toolbar variant="dense" className="bg-primary p-0">
                     <Box className="font-semibold mx-5">
-                        Welcome
+                        <Box className="flex items-center gap-5">
+                            <img src="favicon.ico" className="w-8" />
+                            Welcome
+                        </Box>
                     </Box>
                 </Toolbar>
             </AppBar >
