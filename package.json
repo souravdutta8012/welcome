@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://woodside.github.io/welcome/",
+  "homepage": "https://souravdutta8012.github.io/welcome/",
   "scripts": {
     "start": "vite --port 3000",
     "build": "tsc && vite build",
