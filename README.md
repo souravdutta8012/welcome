@@ -5,7 +5,12 @@
 
 ### Web URL
 
+### Dev URL
+
 https://souravdutta8012.github.io/welcome/
+### Prod URL
+
+https://welcome-tcs.netlify.app/welcome
 
 ### Acknowledgments
 ```
