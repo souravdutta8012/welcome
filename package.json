@@ -3,12 +3,12 @@
   "private": true,
   "version": "1.0.0",
   "type": "module",
-  "homepage": "https://souravdutta8012.github.io/welcome/",
   "scripts": {
     "start": "vite --port 3000",
     "build": "tsc && vite build",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy:dev": "gh-pages -d build",
+    "deploy:prod": "ntl deploy --prod",
     "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview --port 3000"
   },
