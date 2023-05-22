@@ -48,7 +48,8 @@ export const UserProvider = ({ children }: Props) => {
 
     useEffect(() => {
         async function getUser() {
-            let name = window?.location?.pathname?.replace('/welcome/', "");
+            let name: any = window?.location?.pathname?.split("/");
+            name = name.pop();
             name = decodeURIComponent(name);
             const auth = findUser(name);
             if (auth === undefined) return;

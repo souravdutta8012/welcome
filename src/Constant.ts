@@ -11,7 +11,7 @@ const Identities = [
         firstname: "Sourav",
         lastname: "Dutta",
         email: "sourav@gmail.com",
-        image: "/favicon.ico"
+        image: "/sourav.jpeg"
     }
 ];
 

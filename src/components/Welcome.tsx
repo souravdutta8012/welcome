@@ -2,10 +2,13 @@ import { Avatar, Box, Button, IconButton } from "@mui/material";
 import { DarkMode, LightMode } from "@mui/icons-material";
 import { useUserState } from "../util/User";
 import { getLight, setTheme } from "../util/Function";
+import { useNavigate, useParams } from "react-router-dom";
 
 export default function Welcome() {
 
   const { auth } = useUserState();
+  const navigate = useNavigate();
+  const { name } = useParams();
   const light = getLight();
 
   return (
@@ -50,7 +53,10 @@ export default function Welcome() {
           </Box>
         </Box>
         <Box className="flex flex-col justify-center items-center py-4">
-          <Button variant="contained" className="w-full h-14 font-semibold text-xl capitalize rounded-md bg-gradient-to-r from-cyan-500 to-blue-500" size="large">
+          <Button
+            variant="contained"
+            className="w-full h-14 font-semibold text-xl capitalize rounded-md bg-gradient-to-r from-cyan-500 to-blue-500" size="large"
+            onClick={() => { navigate('/welcome/home/' + name) }}>
             Next
           </Button>
         </Box>
