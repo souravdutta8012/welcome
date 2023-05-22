@@ -5,7 +5,7 @@ export default function Footer() {
     <>
       <Box className="absolute bottom-0 w-full">
         <Box className="bg-transparent flex justify-center items-center py-6">
-          <img src="./tcs.svg" />
+          <img src="/tcs.svg" />
         </Box>
       </Box>
     </>

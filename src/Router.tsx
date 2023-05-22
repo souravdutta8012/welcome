@@ -10,7 +10,7 @@ export const Router = (_props: any) => {
         <Box>
           <Routes>
             <Route path="/" element={<Navigate to="/welcome" />} />
-            <Route path="/welcome" element={<Welcome />} />
+            <Route path="/welcome/:name?" element={<Welcome />} />
           </Routes>
           <Footer />
         </Box>
