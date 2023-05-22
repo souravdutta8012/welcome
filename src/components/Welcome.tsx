@@ -14,22 +14,22 @@ export default function Welcome() {
           <Box className="text-4xl font-bold text-secondary">Application</Box>
         </Box>
         <Box
-          className="flex flex-col justify-center items-center text-center gap-5"
+          className="flex flex-col justify-center items-center text-center gap-10"
           sx={{ height: "55vh" }}
         >
           <Box>
-            <Avatar alt="Remy Sharp" src="./favicon.ico" className="" />
+            <Avatar alt="Remy Sharp" src="./favicon.ico" className="w-36 h-36" />
           </Box>
           <Box className="flex flex-col justify-center items-center text-center gap-1">
             <Box className="text-3xl font-semibold text-white">
               {Identities[0].name}
             </Box>
-            <Box className="text-xl font-light text-white">Welcome to</Box>
+            <Box className="text-xl font-light text-white">welcome to</Box>
             <Box className="text-5xl font-bold text-white">PUNE</Box>
           </Box>
         </Box>
         <Box className="flex flex-col justify-center items-center py-4">
-          <Button variant="contained" className="w-11/12" size="large">
+          <Button variant="contained" className="w-11/12 font-semibold capitalize rounded-md bg-gradient-to-r from-blue-500 to-cyan-500" size="large">
             Next
           </Button>
         </Box>
