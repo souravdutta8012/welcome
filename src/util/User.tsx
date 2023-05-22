@@ -1,5 +1,6 @@
 import { createContext, useContext, useEffect, useReducer } from "react";
 import Identities from "../Constant";
+import { getLight } from "./Function";
 
 type Action = { type: "setUserAuth"; payload: { auth: any } };
 type Dispatch = (action: Action) => void;
@@ -52,6 +53,9 @@ export const UserProvider = ({ children }: Props) => {
             const auth = findUser(name);
             if (auth === undefined) return;
             dispatch({ type: "setUserAuth", payload: { auth: auth } });
+
+            let light = getLight();
+            localStorage.setItem("theme", light ? "light" : "dark");
         }
         getUser();
     }, []);

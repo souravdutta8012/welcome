@@ -1,18 +1,36 @@
-import { Avatar, Box, Button } from "@mui/material";
+import { Avatar, Box, Button, IconButton } from "@mui/material";
+import { DarkMode, LightMode } from "@mui/icons-material";
 import { useUserState } from "../util/User";
+import { getLight, setTheme } from "../util/Function";
 
 export default function Welcome() {
 
   const { auth } = useUserState();
+  const light = getLight();
 
   return (
     <>
-      <Box className="Backdrop"></Box>
+      <Box className={light ? "Backdrop-light" : "Backdrop"}></Box>
       <Box className="Grad1"></Box>
       <Box className="Grad2 overflow-clip"></Box>
-      <Box className="flex flex-col justify-between">
-        <Box className="flex flex-col px-4 pt-8 pb-2">
-          <Box className="text-4xl font-bold text-white">Client</Box>
+      <Box className="flex flex-col justify-between px-6">
+        <Box className="flex flex-col pt-8 pb-2">
+          <Box className="text-4xl font-bold text-white flex justify-between items-center">
+            <Box>
+              Client
+            </Box>
+            <Box className="flex justify-center items-center">
+              {light ? (
+                <IconButton size="small" onClick={() => setTheme("dark")}>
+                  <LightMode className="text-3xl text-black" />
+                </IconButton>
+              ) : (
+                <IconButton size="small" onClick={() => setTheme("light")}>
+                  <DarkMode className="text-3xl text-white" />
+                </IconButton>
+              )}
+            </Box>
+          </Box>
           <Box className="text-4xl font-bold text-white">On-boarding</Box>
           <Box className="text-4xl font-bold text-secondary">Application</Box>
         </Box>
@@ -32,7 +50,7 @@ export default function Welcome() {
           </Box>
         </Box>
         <Box className="flex flex-col justify-center items-center py-4">
-          <Button variant="contained" className="w-11/12 h-14 font-semibold text-xl capitalize rounded-md bg-gradient-to-r from-cyan-500 to-blue-500" size="large">
+          <Button variant="contained" className="w-full h-14 font-semibold text-xl capitalize rounded-md bg-gradient-to-r from-cyan-500 to-blue-500" size="large">
             Next
           </Button>
         </Box>
