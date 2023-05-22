@@ -1,8 +1,5 @@
-import * as React from "react";
-import "./Welcome.css";
-import Identities from "./Constant";
-
 import { Avatar, Box, Button } from "@mui/material";
+import Identities from "../Constant";
 
 export default function Welcome() {
   return (

@@ -25,7 +25,6 @@ const Identities = [{
     lastName: "hyt",
     email: "sahajit1996@gmail2.com",
     image: ""
-},
+}];
 
-]
 export default Identities;
