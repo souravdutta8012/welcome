@@ -30,14 +30,16 @@ export default function NameCard(props: any) {
                         <Box>
                             <span className="bg-blue-500 px-2 rounded text-sm font-semibold">PUNE</span>
                         </Box>
-                        <Box className="flex flex-row justify-center items-center">
-                            <Box>
-                                <Thermostat />
+                        {temp ? (
+                            <Box className="flex flex-row justify-center items-center">
+                                <Box>
+                                    <Thermostat />
+                                </Box>
+                                <Box>
+                                    {temp}
+                                </Box>
                             </Box>
-                            <Box>
-                                {temp}
-                            </Box>
-                        </Box>
+                        ) : null}
                     </Box>
                 </Box>
                 <Box className="flex justify-center items-center">
