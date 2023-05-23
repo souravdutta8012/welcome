@@ -11,7 +11,7 @@ const Identities = [
         firstname: "Sourav",
         lastname: "Dutta",
         email: "souravdutta2108@gmail.com",
-        image: "/sourav.jpeg"
+        image: "/souravdutta.jpeg"
     },
     {
         name: "Owen Mulder",

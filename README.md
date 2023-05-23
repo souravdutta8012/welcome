@@ -9,10 +9,18 @@
 
 ### Web URL
 ### Dev URL
-https://welcome-tcs-dev.netlify.app
+https://welcome-tcs-dev.netlify.app/souravdutta
+https://welcome-tcs-dev.netlify.app/jitsaha
+https://welcome-tcs-dev.netlify.app/owenmulder
+https://welcome-tcs-dev.netlify.app/danielkalms
+https://welcome-tcs-dev.netlify.app/pinotodesco
+https://welcome-tcs-dev.netlify.app/lotuschua
 
 ### Prod URL
-https://welcome-tcs.netlify.app
+https://welcome-tcs.netlify.app/owenmulder
+https://welcome-tcs.netlify.app/danielkalms
+https://welcome-tcs.netlify.app/pinotodesco
+https://welcome-tcs.netlify.app/lotuschua
 
 ### Acknowledgments
 ```
