@@ -18,15 +18,15 @@ export default function NameCard(props: any) {
 
     return (
         <>
-            <Box className="flex flex-row justify-between items-center py-5 px-5 gap-10">
+            <Box className="flex flex-row justify-between items-center py-5 px-5">
                 <Box>
                     <Avatar alt="Remy Sharp" src={auth.image} className="w-20 h-20" />
                 </Box>
-                <Box className="flex grow flex-col gap-1 text-white">
+                <Box className="flex flex-col gap-1 text-white">
                     <Box className="text-xl">
                         <span className="font-light">Hi, </span>{auth?.name}
                     </Box>
-                    <Box className="flex justify-between items-center">
+                    <Box className="flex justify-between items-center gap-5">
                         <Box>
                             <span className="bg-blue-500 px-2 rounded text-sm font-semibold">PUNE</span>
                         </Box>

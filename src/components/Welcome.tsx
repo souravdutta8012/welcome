@@ -49,7 +49,7 @@ export default function Welcome() {
               {auth.name}
             </Box>
             <Box className="text-xl font-light text-white">welcome to</Box>
-            <Box className="text-5xl font-bold text-white">PUNE</Box>
+            <Box className="text-5xl font-bold text-white">TCS</Box>
           </Box>
         </Box>
         <Box className="flex flex-col justify-center items-center py-4">
