@@ -2,7 +2,7 @@ import { Box } from "@mui/material";
 import { useUserState } from "../util/User";
 import { getLight } from "../util/Function";
 import NameCard from "./NameCard";
-import { Calendar } from "./Calendar";
+import Video from "./Video";
 
 export default function Home() {
 	const { auth } = useUserState();
@@ -13,8 +13,10 @@ export default function Home() {
 			<Box className={light ? "Backdrop-light" : "Backdrop"}></Box>
 			<Box className="Grad1"></Box>
 			<Box className="Grad2 overflow-clip"></Box>
-			<NameCard auth={auth} />
-			<Calendar />
+			<Box className="px-6">
+				<NameCard auth={auth} />
+				<Video />
+			</Box>
 		</>
 	);
 }

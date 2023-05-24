@@ -18,9 +18,9 @@ export default function NameCard(props: any) {
 
     return (
         <>
-            <Box className="flex flex-row justify-between items-center py-5 px-5">
+            <Box className="flex flex-row justify-between items-center py-5">
                 <Box>
-                    <Avatar alt="Remy Sharp" src={auth.image} className="w-20 h-20" />
+                    <Avatar alt="Remy Sharp" src={auth.image} className="w-20 h-20 border border-primary-dark" />
                 </Box>
                 <Box className={"flex flex-col gap-1 " + (light ? "text-primary-dark" : "text-primary-light")}>
                     <Box className="text-xl">
