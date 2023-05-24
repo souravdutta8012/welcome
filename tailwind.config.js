@@ -8,8 +8,15 @@ export default {
   theme: {
     extend: {
       colors: {
-        'primary': '#111827',
-        'secondary': '#00ADB5'
+        'primary-dark': '#1E2323',
+        'primary-light': '#F2F2F2',
+        'primary-pink': '#F03782',
+
+        'secondary-red': '#BE0046',
+        'secondary-orange': '#EB5000',
+        'secondary-yellow': '#FFE600',
+        'secondary-blue': '#198CE6',
+        'secondary-purple': '#4D2F9E'
       }
     },
   },
