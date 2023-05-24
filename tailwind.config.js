@@ -13,7 +13,8 @@ export default {
         'primary-pink': '#F03782',
 
         'secondary-dark': '#090B0B',
-        'secondary-light': '#E3E4E4',
+        'secondary-light': '#D1D5DB',
+        'secondary-gray': '#6B7280',
         'secondary-red': '#BE0046',
         'secondary-orange': '#EB5000',
         'secondary-yellow': '#FFE600',
