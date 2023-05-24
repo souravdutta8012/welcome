@@ -1,9 +1,18 @@
+import { useState, useEffect } from "react";
 import { Dialog } from "@mui/material";
 import { transition } from "../util/Function";
 import Back from "./Back";
 
 export default function CommonDialog(props: any) {
     const { open, setopen, light } = props;
+
+    const [height, setHeight] = useState(window.innerHeight - 125);
+
+    useEffect(() => {
+        const handleWindowResize = () => setHeight(window.innerHeight - 125);
+        window.addEventListener("resize", handleWindowResize);
+        return () => window.removeEventListener("resize", handleWindowResize);
+    }, []);
 
     const dialogClose = () => {
         setopen(false);
@@ -19,7 +28,7 @@ export default function CommonDialog(props: any) {
                 TransitionComponent={transition}
                 PaperProps={{
                     sx: {
-                        maxHeight: '85vh',
+                        maxHeight: height,
                         position: 'absolute',
                         bottom: 0,
                         borderRadius: '20px 20px 0 0',
