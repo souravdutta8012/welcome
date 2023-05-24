@@ -22,13 +22,13 @@ export default function NameCard(props: any) {
                 <Box>
                     <Avatar alt="Remy Sharp" src={auth.image} className="w-20 h-20" />
                 </Box>
-                <Box className="flex flex-col gap-1 text-white">
+                <Box className={"flex flex-col gap-1 " + (light ? "text-primary-dark" : "text-primary-light")}>
                     <Box className="text-xl">
-                        <span className="font-light">Hi, </span>{auth?.name}
+                        Hi, <span className="font-semibold">{auth?.name}</span>
                     </Box>
                     <Box className="flex justify-between items-center gap-5">
                         <Box>
-                            <span className="bg-blue-500 px-2 rounded text-sm font-semibold">PUNE</span>
+                            <span className="bg-secondary-blue px-2 rounded text-sm font-semibold text-primary-light">PUNE</span>
                         </Box>
                         {temp ? (
                             <Box className="flex flex-row justify-center items-center">
@@ -45,11 +45,11 @@ export default function NameCard(props: any) {
                 <Box className="flex justify-center items-center">
                     {light ? (
                         <IconButton size="small" onClick={() => setTheme("dark")}>
-                            <LightMode className="text-3xl text-black" />
+                            <LightMode className="text-3xl text-primary-dark" />
                         </IconButton>
                     ) : (
                         <IconButton size="small" onClick={() => setTheme("light")}>
-                            <DarkMode className="text-3xl text-white" />
+                            <DarkMode className="text-3xl text-primary-light" />
                         </IconButton>
                     )}
                 </Box>
