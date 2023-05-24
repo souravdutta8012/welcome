@@ -1,5 +1,5 @@
 import { Box } from "@mui/material";
-import React from "react";
+
 import { TimeTable } from "./TimeTable";
 import { ContentandWork } from "./ContentandWork";
 
