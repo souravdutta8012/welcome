@@ -5,16 +5,16 @@ import NameCard from "./NameCard";
 import { Calendar } from "./Calendar";
 
 export default function Home() {
-  const { auth } = useUserState();
-  const light = getLight();
+	const { auth } = useUserState();
+	const light = getLight();
 
-  return (
-    <>
-      <Box className={light ? "Backdrop-light" : "Backdrop"}></Box>
-      <Box className="Grad1"></Box>
-      <Box className="Grad2 overflow-clip"></Box>
-      <NameCard auth={auth} />
-      <Calendar />
-    </>
-  );
+	return (
+		<>
+			<Box className={light ? "Backdrop-light" : "Backdrop"}></Box>
+			<Box className="Grad1"></Box>
+			<Box className="Grad2 overflow-clip"></Box>
+			<NameCard auth={auth} />
+			<Calendar />
+		</>
+	);
 }
