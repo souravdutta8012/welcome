@@ -17,8 +17,15 @@ export default function CommonDialog(props: any) {
                 fullWidth
                 fullScreen
                 TransitionComponent={transition}
+                PaperProps={{
+                    sx: {
+                        maxHeight: '80vh',
+                        position: 'absolute',
+                        bottom: 0,
+                        borderRadius: '20px'
+                    }
+                }}
             >
-                hi
                 <Back light={light} func={dialogClose} />
             </Dialog>
         </>
