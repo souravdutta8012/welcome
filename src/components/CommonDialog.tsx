@@ -19,10 +19,11 @@ export default function CommonDialog(props: any) {
                 TransitionComponent={transition}
                 PaperProps={{
                     sx: {
-                        maxHeight: '80vh',
+                        maxHeight: '85vh',
                         position: 'absolute',
                         bottom: 0,
-                        borderRadius: '20px'
+                        borderRadius: '20px 20px 0 0',
+                        backgroundColor: `${(light ? "#F2F2F2" : "#1E2323")}`
                     }
                 }}
             >
