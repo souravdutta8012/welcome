@@ -3,7 +3,7 @@ import { Card, CardCover } from "@mui/joy";
 export default function Video() {
     return (
         <>
-            <Card className="h-40 my-2 shadow-none">
+            <Card className="h-40 mt-2 mb-6 shadow-none">
                 <CardCover>
                     <video
                         autoPlay
