@@ -5,12 +5,12 @@ import { getLight } from "../util/Function";
 import { Pune } from "../Constant";
 
 export default function Office() {
-    const [height, setHeight] = useState(window.innerHeight - 215);
+    const [height, setHeight] = useState(window.innerHeight - 300);
 
     const light = getLight();
 
     useEffect(() => {
-        const handleWindowResize = () => setHeight(window.innerHeight - 215);
+        const handleWindowResize = () => setHeight(window.innerHeight - 300);
         window.addEventListener("resize", handleWindowResize);
         return () => window.removeEventListener("resize", handleWindowResize);
     }, []);
@@ -23,7 +23,7 @@ export default function Office() {
                         Pune
                     </Box>
                     <Box>
-                        <a rel="noopener noreferrer" target="_blank" href="https://goo.gl/maps/nci2ZWG7fevgwGuD9?coh=178571&entry=tt">
+                        <a rel="noopener noreferrer" target="_blank" href={Pune?.map}>
                             <Button className="capitalize bg-secondary-blue" size="small" variant="contained" startIcon={<LocationOn className="pb-1" />}>
                                 Map
                             </Button>

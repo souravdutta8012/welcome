@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Box, Dialog } from "@mui/material";
 import { transition } from "../util/Function";
 import Office from "./Office";
+import Lead from "./Lead";
 import Back from "./Back";
 
 export default function CommonDialog(props: any) {
@@ -45,7 +46,7 @@ export default function CommonDialog(props: any) {
                     <Box />
                 ) : null}
                 {value === 'contact' ? (
-                    <Box />
+                    <Lead />
                 ) : null}
                 {value === 'office' ? (
                     <Office />

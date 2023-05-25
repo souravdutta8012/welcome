@@ -43,7 +43,25 @@ export const Identities = [
     }
 ];
 
+export const Leads = [
+    {
+        name: "Seema Mehra",
+        tag: "Vice President & Business Head Australia & New Zealand",
+        linkedin: "https://www.linkedin.com/in/seema-mehra-95166b1/",
+        about: `Vice-President at TCS, and presently the Business Head for TCS Australia & New Zealand (ANZ). Her current portfolio comprises 100+ top global clients across Retail, Energy, Resources & Utilities, Manufacturing, CMI, Life Sciences & HealthCare. In a career of over 3 decades, She have collaborated with the top global leaders to spearhead strategic business growth. She is a thorough professional and works in the win-win style. TCS has often endorsed her as a standout leader, the "most powerful women in TCS". Beyond work, she enjoys cooking, and travelling with her family.`,
+        image: "/seemamehra.svg"
+    },
+    {
+        name: "Saptarshi Dasgupta",
+        tag: "Business Head, Energy, Resources Healthcare & Lifescience - ANZ",
+        linkedin: "https://www.linkedin.com/in/saptarshi-dasgupta-9009092b/",
+        about: ``,
+        image: "/saptarshidasgupta.svg"
+    }
+];
+
 export const Pune = {
+    map: "https://goo.gl/maps/nci2ZWG7fevgwGuD9?coh=178571&entry=tt",
     about: `Pune is a metropolitan city in Maharashtra. It is the 8th most populous city in India. In the 16th century, Pune became an important part of the Maratha, Mughal, and the Peshwa dynasty. The Great Maratha ruler Chhatrapati Shivaji Maharaj was born at Shivneri fort, which is not very far from Pune.
 
             The city is nicknamed as IT capital of India, Cultural capital of Maharashtra, Oxford of the East, the queen of Deccan and the cycle city of India. Pune city is a confluence of Mula and Mutha river and flooded by Pavana, Indrayani and Bhima River. Pune has seen a rapid growth of industrialization and urbanization over the years. The core area has 17 paths, which houses a number of old buildings and gives an insight into the old city life. Pune has a pleasant temperature all around the year except for the month of May. There is moderate rainfall in the monsoon and the winters here are very mild.
