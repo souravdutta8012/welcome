@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Badge, Box } from "@mui/material";
+import { Box } from "@mui/material";
 import { CalendarTodayOutlined, Diversity1Outlined, MoreOutlined, PermContactCalendarOutlined, PinDropOutlined } from "@mui/icons-material";
 import CommonDialog from "./CommonDialog";
 import NameCard from "./NameCard";
@@ -9,13 +9,13 @@ import { getLight } from "../util/Function";
 
 export default function Home() {
 	const [open, setopen] = useState(false);
-	const [height, setHeight] = useState(window.innerHeight - 312);
+	const [height, setHeight] = useState(window.innerHeight - 440);
 
 	const { auth } = useUserState();
 	const light = getLight();
 
 	useEffect(() => {
-		const handleWindowResize = () => setHeight(window.innerHeight - 312);
+		const handleWindowResize = () => setHeight(window.innerHeight - 440);
 		window.addEventListener("resize", handleWindowResize);
 		return () => window.removeEventListener("resize", handleWindowResize);
 	}, []);
@@ -35,16 +35,11 @@ export default function Home() {
 				<Box className="overflow-y-auto" sx={{ maxHeight: height }}>
 					<Box className="flex justify-around items-center pt-6 pb-6">
 						<Box>
-							<Badge
-								badgeContent="6"
-								classes={{ badge: 'bg-primary-pink text-primary-light font-bold' }}
-							>
-								<Box className={"w-32 h-32 rounded-lg " + (light ? "bg-secondary-light" : "bg-secondary-dark")}>
-									<div className="flex w-full h-full justify-center items-center" onClick={() => openDialog()}>
-										<CalendarTodayOutlined className={"text-4xl " + (light ? "text-primary-dark" : "text-primary-light")} />
-									</div>
-								</Box>
-							</Badge>
+							<Box className={"w-32 h-32 rounded-lg bg-gradient-to-bl " + (light ? "from-secondary-light to-gray-400" : "from-primary-pink to-secondary-purple")}>
+								<div className="flex w-full h-full justify-center items-center" onClick={() => openDialog()}>
+									<CalendarTodayOutlined className={"text-4xl " + (light ? "text-primary-dark" : "text-primary-light")} />
+								</div>
+							</Box>
 							<Box className="text-center pt-2">
 								<Box className={"font-semibold " + (light ? "text-primary-dark" : "text-primary-light")}>
 									Day 1
@@ -55,16 +50,11 @@ export default function Home() {
 							</Box>
 						</Box>
 						<Box>
-							<Badge
-								badgeContent="8"
-								classes={{ badge: 'bg-primary-pink text-primary-light font-bold' }}
-							>
-								<Box className={"w-32 h-32 rounded-lg " + (light ? "bg-secondary-light" : "bg-secondary-dark")}>
-									<div className="flex w-full h-full justify-center items-center" onClick={() => openDialog()}>
-										<CalendarTodayOutlined className={"text-4xl " + (light ? "text-primary-dark" : "text-primary-light")} />
-									</div>
-								</Box>
-							</Badge>
+							<Box className={"w-32 h-32 rounded-lg bg-gradient-to-bl " + (light ? "from-secondary-light to-gray-400" : "from-primary-pink to-secondary-purple")}>
+								<div className="flex w-full h-full justify-center items-center" onClick={() => openDialog()}>
+									<CalendarTodayOutlined className={"text-4xl " + (light ? "text-primary-dark" : "text-primary-light")} />
+								</div>
+							</Box>
 							<Box className="text-center pt-2">
 								<Box className={"font-semibold " + (light ? "text-primary-dark" : "text-primary-light")}>
 									Day 2
@@ -77,7 +67,7 @@ export default function Home() {
 					</Box>
 					<Box className="flex justify-around items-center pt-2 pb-6">
 						<Box>
-							<Box className={"w-32 h-32 rounded-lg " + (light ? "bg-secondary-light" : "bg-secondary-dark")}>
+							<Box className={"w-32 h-32 rounded-lg bg-gradient-to-bl " + (light ? "from-secondary-light to-gray-400" : "from-primary-pink to-secondary-purple")}>
 								<div className="flex w-full h-full justify-center items-center" onClick={() => openDialog()}>
 									<PermContactCalendarOutlined className={"text-4xl " + (light ? "text-primary-dark" : "text-primary-light")} />
 								</div>
@@ -92,7 +82,7 @@ export default function Home() {
 							</Box>
 						</Box>
 						<Box>
-							<Box className={"w-32 h-32 rounded-lg " + (light ? "bg-secondary-light" : "bg-secondary-dark")}>
+							<Box className={"w-32 h-32 rounded-lg bg-gradient-to-bl " + (light ? "from-secondary-light to-gray-400" : "from-primary-pink to-secondary-purple")}>
 								<div className="flex w-full h-full justify-center items-center" onClick={() => openDialog()}>
 									<MoreOutlined className={"rotate-90 text-4xl " + (light ? "text-primary-dark" : "text-primary-light")} />
 								</div>
@@ -109,7 +99,7 @@ export default function Home() {
 					</Box>
 					<Box className="flex justify-around items-center pt-2 pb-6">
 						<Box>
-							<Box className={"w-32 h-32 rounded-lg " + (light ? "bg-secondary-light" : "bg-secondary-dark")}>
+							<Box className={"w-32 h-32 rounded-lg bg-gradient-to-bl " + (light ? "from-secondary-light to-gray-400" : "from-primary-pink to-secondary-purple")}>
 								<div className="flex w-full h-full justify-center items-center" onClick={() => openDialog()}>
 									<Diversity1Outlined className={"text-4xl " + (light ? "text-primary-dark" : "text-primary-light")} />
 								</div>
@@ -124,7 +114,7 @@ export default function Home() {
 							</Box>
 						</Box>
 						<Box>
-							<Box className={"w-32 h-32 rounded-lg " + (light ? "bg-secondary-light" : "bg-secondary-dark")}>
+							<Box className={"w-32 h-32 rounded-lg bg-gradient-to-bl " + (light ? "from-secondary-light to-gray-400" : "from-primary-pink to-secondary-purple")}>
 								<div className="flex w-full h-full justify-center items-center" onClick={() => openDialog()}>
 									<PinDropOutlined className={"text-4xl " + (light ? "text-primary-dark" : "text-primary-light")} />
 								</div>
