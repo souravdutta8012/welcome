@@ -1,5 +1,5 @@
 import { createContext, useContext, useEffect, useReducer } from "react";
-import Identities from "../Constant";
+import { Identities } from "../Constant";
 import { getLight } from "./Function";
 
 type Action = { type: "setUserAuth"; payload: { auth: any } };

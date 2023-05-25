@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Box } from "@mui/material";
-import { CalendarTodayOutlined, Diversity1Outlined, MoreOutlined, PermContactCalendarOutlined, PinDropOutlined } from "@mui/icons-material";
+import { CalendarTodayOutlined, MoreOutlined, PermContactCalendarOutlined } from "@mui/icons-material";
 import CommonDialog from "./CommonDialog";
 import NameCard from "./NameCard";
 import Video from "./Video";
@@ -9,6 +9,7 @@ import { getLight } from "../util/Function";
 
 export default function Home() {
 	const [open, setopen] = useState(false);
+	const [value, setvalue] = useState(undefined);
 	const [height, setHeight] = useState(window.innerHeight - 440);
 
 	const { auth } = useUserState();
@@ -20,8 +21,9 @@ export default function Home() {
 		return () => window.removeEventListener("resize", handleWindowResize);
 	}, []);
 
-	const openDialog = () => {
+	const openDialog = (value: any) => {
 		setopen(true);
+		setvalue(value);
 	};
 
 	return (
@@ -36,7 +38,7 @@ export default function Home() {
 					<Box className="flex justify-around items-center pt-6 pb-6">
 						<Box>
 							<Box className={"w-32 h-32 rounded-lg bg-gradient-to-bl " + (light ? "from-secondary-light to-gray-400" : "from-primary-pink to-secondary-purple")}>
-								<div className="flex w-full h-full justify-center items-center" onClick={() => openDialog()}>
+								<div className="flex w-full h-full justify-center items-center" onClick={() => openDialog('day1')}>
 									<CalendarTodayOutlined className={"text-4xl " + (light ? "text-primary-dark" : "text-primary-light")} />
 								</div>
 							</Box>
@@ -51,7 +53,7 @@ export default function Home() {
 						</Box>
 						<Box>
 							<Box className={"w-32 h-32 rounded-lg bg-gradient-to-bl " + (light ? "from-secondary-light to-gray-400" : "from-primary-pink to-secondary-purple")}>
-								<div className="flex w-full h-full justify-center items-center" onClick={() => openDialog()}>
+								<div className="flex w-full h-full justify-center items-center" onClick={() => openDialog('day2')}>
 									<CalendarTodayOutlined className={"text-4xl " + (light ? "text-primary-dark" : "text-primary-light")} />
 								</div>
 							</Box>
@@ -68,7 +70,7 @@ export default function Home() {
 					<Box className="flex justify-around items-center pt-2 pb-6">
 						<Box>
 							<Box className={"w-32 h-32 rounded-lg bg-gradient-to-bl " + (light ? "from-secondary-light to-gray-400" : "from-primary-pink to-secondary-purple")}>
-								<div className="flex w-full h-full justify-center items-center" onClick={() => openDialog()}>
+								<div className="flex w-full h-full justify-center items-center" onClick={() => openDialog('contact')}>
 									<PermContactCalendarOutlined className={"text-4xl " + (light ? "text-primary-dark" : "text-primary-light")} />
 								</div>
 							</Box>
@@ -77,61 +79,29 @@ export default function Home() {
 									Contact
 								</Box>
 								<Box className={"text-sm " + (light ? "text-secondary-purple" : "text-secondary-gray")}>
-									View Team Leads
+									TCS Leadership
 								</Box>
 							</Box>
 						</Box>
 						<Box>
 							<Box className={"w-32 h-32 rounded-lg bg-gradient-to-bl " + (light ? "from-secondary-light to-gray-400" : "from-primary-pink to-secondary-purple")}>
-								<div className="flex w-full h-full justify-center items-center" onClick={() => openDialog()}>
+								<div className="flex w-full h-full justify-center items-center" onClick={() => openDialog('office')}>
 									<MoreOutlined className={"rotate-90 text-4xl " + (light ? "text-primary-dark" : "text-primary-light")} />
 								</div>
 							</Box>
 							<Box className="text-center pt-2">
 								<Box className={"font-semibold " + (light ? "text-primary-dark" : "text-primary-light")}>
-									Pune Places
+									Pune Office
 								</Box>
 								<Box className={"text-sm " + (light ? "text-secondary-purple" : "text-secondary-gray")}>
-									Places to visit
-								</Box>
-							</Box>
-						</Box>
-					</Box>
-					<Box className="flex justify-around items-center pt-2 pb-6">
-						<Box>
-							<Box className={"w-32 h-32 rounded-lg bg-gradient-to-bl " + (light ? "from-secondary-light to-gray-400" : "from-primary-pink to-secondary-purple")}>
-								<div className="flex w-full h-full justify-center items-center" onClick={() => openDialog()}>
-									<Diversity1Outlined className={"text-4xl " + (light ? "text-primary-dark" : "text-primary-light")} />
-								</div>
-							</Box>
-							<Box className="text-center pt-2">
-								<Box className={"font-semibold " + (light ? "text-primary-dark" : "text-primary-light")}>
-									Culture
-								</Box>
-								<Box className={"text-sm " + (light ? "text-secondary-purple" : "text-secondary-gray")}>
-									View Socity
-								</Box>
-							</Box>
-						</Box>
-						<Box>
-							<Box className={"w-32 h-32 rounded-lg bg-gradient-to-bl " + (light ? "from-secondary-light to-gray-400" : "from-primary-pink to-secondary-purple")}>
-								<div className="flex w-full h-full justify-center items-center" onClick={() => openDialog()}>
-									<PinDropOutlined className={"text-4xl " + (light ? "text-primary-dark" : "text-primary-light")} />
-								</div>
-							</Box>
-							<Box className="text-center pt-2">
-								<Box className={"font-semibold " + (light ? "text-primary-dark" : "text-primary-light")}>
-									Pune Map
-								</Box>
-								<Box className={"text-sm " + (light ? "text-secondary-purple" : "text-secondary-gray")}>
-									View Locations
+									TCS Pune Office
 								</Box>
 							</Box>
 						</Box>
 					</Box>
 				</Box>
 			</Box>
-			<CommonDialog open={open} setopen={setopen} light={light} />
+			<CommonDialog open={open} setopen={setopen} value={value} setvalue={setvalue} light={light} />
 		</>
 	);
 }

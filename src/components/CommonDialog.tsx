@@ -1,10 +1,11 @@
 import { useState, useEffect } from "react";
-import { Dialog } from "@mui/material";
+import { Box, Dialog } from "@mui/material";
 import { transition } from "../util/Function";
+import Office from "./Office";
 import Back from "./Back";
 
 export default function CommonDialog(props: any) {
-    const { open, setopen, light } = props;
+    const { open, setopen, value, setvalue, light } = props;
 
     const [height, setHeight] = useState(window.innerHeight - 125);
 
@@ -16,6 +17,7 @@ export default function CommonDialog(props: any) {
 
     const dialogClose = () => {
         setopen(false);
+        setvalue(undefined);
     };
 
     return (
@@ -36,6 +38,18 @@ export default function CommonDialog(props: any) {
                     }
                 }}
             >
+                {value === 'day1' ? (
+                    <Box />
+                ) : null}
+                {value === 'day2' ? (
+                    <Box />
+                ) : null}
+                {value === 'contact' ? (
+                    <Box />
+                ) : null}
+                {value === 'office' ? (
+                    <Office />
+                ) : null}
                 <Back light={light} func={dialogClose} />
             </Dialog>
         </>
