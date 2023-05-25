@@ -10,7 +10,7 @@ export default function LeadCard(props: any) {
                 <Box>
                     <Avatar alt="Remy Sharp" src={data?.image} className="w-20 h-20 border border-primary-dark" />
                 </Box>
-                <Box className="flex flex-col gap-4">
+                <Box className="flex flex-col gap-4 grow">
                     <Box className="flex justify-between items-center gap-2">
                         <Box className={"text-lg font-semibold " + (light ? "text-secondary-purple" : "text-primary-light")}>
                             {data?.name}

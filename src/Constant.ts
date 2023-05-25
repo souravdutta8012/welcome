@@ -57,6 +57,55 @@ export const Leads = [
         linkedin: "https://www.linkedin.com/in/saptarshi-dasgupta-9009092b/",
         about: ``,
         image: "/saptarshidasgupta.svg"
+    },
+    {
+        name: "Dr.Harrick Vin",
+        tag: "Chief Services Innovation Officer",
+        linkedin: "https://www.linkedin.com/in/harrickvin/",
+        about: ``,
+        image: "/harrickvin.svg"
+    },
+    {
+        name: "Reguraman Ayyaswamy",
+        tag: "Senior Vice President, IoT and Digital Engineering",
+        linkedin: "https://www.linkedin.com/in/reguayyaswamy/",
+        about: ``,
+        image: "/reguramanayyaswamy.svg"
+    },
+    {
+        name: "Dinanath Kholkar",
+        tag: "Senior Vice President & Global Head of Partner Ecosystems & Alliances",
+        linkedin: "https://www.linkedin.com/in/dinanathkholkar/",
+        about: ``,
+        image: "/dinanathkholkar.svg"
+    },
+    {
+        name: "Sreenivasa Chakravarti",
+        tag: "Vice President - IoT and Digital Engineering",
+        linkedin: "https://www.linkedin.com/in/sreenivasa-chakravarti-5776432/",
+        about: ``,
+        image: "/sreenivasachakravarti.svg"
+    },
+    {
+        name: "Tushar Arora",
+        tag: "Client Partner - Woodside",
+        linkedin: "https://www.linkedin.com/in/tushar17/",
+        about: ``,
+        image: "/tushararora.svg"
+    },
+    {
+        name: "Vishwesh Shete",
+        tag: "Head Connected Plants- IoT & Digital Engineering",
+        linkedin: "https://www.linkedin.com/in/vishwesh-shete-874005a/",
+        about: ``,
+        image: "/vishweshshete.svg"
+    },
+    {
+        name: "Mrityunjoy Ghosh",
+        tag: "Delivery Partner - Woodside",
+        linkedin: "https://www.linkedin.com/in/mrityunjoy-ghosh-93b66b1aa/",
+        about: ``,
+        image: "/mrityunjoyghosh.svg"
     }
 ];
 
