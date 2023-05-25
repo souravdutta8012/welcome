@@ -17,7 +17,7 @@ export default function LeadCard(props: any) {
                         </Box>
                         <Box className="text-secondary-blue">
                             <a rel="noopener noreferrer" target="_blank" href={data?.linkedin}>
-                                <LinkedIn />
+                                <LinkedIn className="text-2xl" />
                             </a>
                         </Box>
                     </Box>
