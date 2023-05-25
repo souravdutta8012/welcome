@@ -5,12 +5,12 @@ import { getLight } from "../util/Function";
 import { Pune } from "../Constant";
 
 export default function Office() {
-    const [height, setHeight] = useState(window.innerHeight - 300);
+    const [height, setHeight] = useState(window.innerHeight - 215);
 
     const light = getLight();
 
     useEffect(() => {
-        const handleWindowResize = () => setHeight(window.innerHeight - 300);
+        const handleWindowResize = () => setHeight(window.innerHeight - 215);
         window.addEventListener("resize", handleWindowResize);
         return () => window.removeEventListener("resize", handleWindowResize);
     }, []);
@@ -31,7 +31,7 @@ export default function Office() {
                     </Box>
                 </Box>
                 <Box className="overflow-y-auto" sx={{ maxHeight: height }}>
-                    <Box className={"pb-6 whitespace-pre-line " + (light ? "text-primary-dark" : "text-primary-light")}>
+                    <Box className={"pb-24 whitespace-pre-line " + (light ? "text-primary-dark" : "text-primary-light")}>
                         {Pune?.about}
                     </Box>
                 </Box>

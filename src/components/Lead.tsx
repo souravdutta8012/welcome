@@ -18,7 +18,7 @@ export default function Lead() {
     return (
         <>
             <Box className="px-6">
-                <Box className="pt-4 overflow-y-auto" sx={{ maxHeight: height }}>
+                <Box className="pt-4 pb-20 overflow-y-auto" sx={{ maxHeight: height }}>
                     {Leads?.map((item: any, i: number) => <LeadCard key={i} data={item} light={light} />)}
                 </Box>
             </Box>
