@@ -43,6 +43,26 @@ export const Identities = [
     }
 ];
 
+export const Day1 = [
+    {
+        time: "9:00 AM",
+        task: [
+            "Discuss project updates, goals, and challenges.",
+            "Assign tasks and responsibilities for the day."
+        ]
+    }
+];
+
+export const Day2 = [
+    {
+        time: "9:30 AM",
+        task: [
+            "Discuss project updates, goals, and challenges.",
+            "Review any pending issues or concerns."
+        ]
+    }
+];
+
 export const Leads = [
     {
         name: "Seema Mehra",

@@ -1,17 +1,27 @@
 import { Badge, Box } from "@mui/material";
 import { getLight } from "../util/Function";
+import { Day1, Day2 } from "../Constant";
 
 export default function Calender(props: any) {
-    const { dated, setdated } = props;
+    const { dated, setdated, setdateinfo } = props;
     const dates = [14, 15, 16, 17, 18];
 
     const light = getLight();
 
+    const changeDate = (date: any) => {
+        setdated(date);
+        if (date === 15) {
+            setdateinfo(Day1);
+        } else {
+            setdateinfo(Day2);
+        }
+    };
+
     return (
         <>
             <Box className="flex justify-between items-center py-6">
-                {dates?.map((d: any) => (
-                    <>
+                {dates?.map((d: any, i: number) => (
+                    <Box key={i}>
                         {(d === dated) ? (
                             <>
                                 <Badge variant="dot" classes={{ badge: 'bg-primary-pink' }}>
@@ -27,7 +37,7 @@ export default function Calender(props: any) {
                             </>
                         ) : (d === 15 || d === 16) ? (
                             <>
-                                <div onClick={() => setdated(d)}>
+                                <div onClick={() => changeDate(d)}>
                                     <Badge variant="dot" classes={{ badge: 'bg-primary-pink' }}>
                                         <Box className="flex flex-col justify-center items-center">
                                             <Box className={"text-base  font-bold " + (light ? "text-primary-dark" : "text-primary-light")}>
@@ -52,7 +62,7 @@ export default function Calender(props: any) {
                                 </Box>
                             </>
                         )}
-                    </>
+                    </Box>
                 ))}
             </Box>
         </>
