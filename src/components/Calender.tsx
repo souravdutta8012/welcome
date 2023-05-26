@@ -2,7 +2,7 @@ import { Badge, Box } from "@mui/material";
 import { getLight } from "../util/Function";
 
 export default function Calender(props: any) {
-    const { date } = props;
+    const { dated, setdated } = props;
     const dates = [14, 15, 16, 17, 18];
 
     const light = getLight();
@@ -12,7 +12,7 @@ export default function Calender(props: any) {
             <Box className="flex justify-between items-center py-6">
                 {dates?.map((d: any) => (
                     <>
-                        {(d === date) ? (
+                        {(d === dated) ? (
                             <>
                                 <Badge variant="dot" classes={{ badge: 'bg-primary-pink' }}>
                                     <Box className="flex flex-col justify-center items-center">
@@ -27,16 +27,18 @@ export default function Calender(props: any) {
                             </>
                         ) : (d === 15 || d === 16) ? (
                             <>
-                                <Badge variant="dot" classes={{ badge: 'bg-primary-pink' }}>
-                                    <Box className="flex flex-col justify-center items-center">
-                                        <Box className={"text-base  font-bold " + (light ? "text-primary-dark" : "text-primary-light")}>
-                                            {d}
+                                <div onClick={() => setdated(d)}>
+                                    <Badge variant="dot" classes={{ badge: 'bg-primary-pink' }}>
+                                        <Box className="flex flex-col justify-center items-center">
+                                            <Box className={"text-base  font-bold " + (light ? "text-primary-dark" : "text-primary-light")}>
+                                                {d}
+                                            </Box>
+                                            <Box className={"text-sm font-bold " + (light ? "text-primary-dark" : "text-primary-light")}>
+                                                JUN
+                                            </Box>
                                         </Box>
-                                        <Box className={"text-sm font-bold " + (light ? "text-primary-dark" : "text-primary-light")}>
-                                            JUN
-                                        </Box>
-                                    </Box>
-                                </Badge>
+                                    </Badge>
+                                </div>
                             </>
                         ) : (
                             <>
