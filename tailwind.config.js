@@ -11,6 +11,7 @@ export default {
         'primary-dark': '#1E2323',
         'primary-light': '#F2F2F2',
         'primary-pink': '#F03782',
+        'primary-blue': '#2E0761',
 
         'secondary-dark': '#090B0B',
         'secondary-light': '#D1D5DB',
