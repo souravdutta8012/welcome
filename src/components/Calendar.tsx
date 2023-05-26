@@ -2,7 +2,7 @@ import { Badge, Box } from "@mui/material";
 import { getLight } from "../util/Function";
 import { Day1, Day2 } from "../Constant";
 
-export default function Calender(props: any) {
+export default function Calendar(props: any) {
     const { dated, setdated, setdateinfo } = props;
     const dates = [14, 15, 16, 17, 18];
 

@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Box } from "@mui/material";
-import Calender from "./Calender";
+import Calendar from "./Calendar";
 import Agenda from "./Agenda";
 import { Day1, Day2 } from "../Constant";
 
@@ -28,7 +28,7 @@ export default function Day(props: any) {
     return (
         <>
             <Box className="px-6">
-                <Calender
+                <Calendar
                     dated={dated} setdated={setdated}
                     setdateinfo={setdateinfo}
                 />
