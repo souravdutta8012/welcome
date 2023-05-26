@@ -1,5 +1,5 @@
 import { Avatar, Box } from "@mui/material";
-import { KeyboardArrowRight, LinkedIn } from "@mui/icons-material";
+import { LinkedIn, ReadMore } from "@mui/icons-material";
 
 export default function LeadCard(props: any) {
     const { data, light } = props;
@@ -17,7 +17,7 @@ export default function LeadCard(props: any) {
                         </Box>
                         <Box className="text-secondary-blue">
                             <a rel="noopener noreferrer" target="_blank" href={data?.linkedin}>
-                                <LinkedIn className="text-2xl" />
+                                <LinkedIn className="text-3xl" />
                             </a>
                         </Box>
                     </Box>
@@ -26,7 +26,7 @@ export default function LeadCard(props: any) {
                             {data?.tag}
                         </Box>
                         <Box className={" " + (light ? "text-primary-dark" : "text-primary-light")}>
-                            <KeyboardArrowRight />
+                            <ReadMore className="text-3xl" />
                         </Box>
                     </Box>
                 </Box>
