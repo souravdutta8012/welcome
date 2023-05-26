@@ -1,7 +1,10 @@
 import { Box, Button } from "@mui/material";
+import { getLight } from "../util/Function";
 
 export default function Back(props: any) {
-    const { func, light } = props;
+    const { func } = props;
+
+    const light = getLight();
 
     return (
         <>

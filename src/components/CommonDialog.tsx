@@ -1,12 +1,15 @@
 import { useState, useEffect } from "react";
 import { Box, Dialog } from "@mui/material";
-import { transition } from "../util/Function";
-import Office from "./Office";
+import { getLight, transition } from "../util/Function";
 import Lead from "./Lead";
+import LeadDetails from "./LeadDetails";
+import Office from "./Office";
 import Back from "./Back";
 
 export default function CommonDialog(props: any) {
-    const { open, setopen, value, setvalue, light } = props;
+    const { open, setopen, data, meta } = props;
+
+    const light = getLight();
 
     const [height, setHeight] = useState(window.innerHeight - 125);
 
@@ -18,7 +21,6 @@ export default function CommonDialog(props: any) {
 
     const dialogClose = () => {
         setopen(false);
-        setvalue(undefined);
     };
 
     return (
@@ -29,6 +31,7 @@ export default function CommonDialog(props: any) {
                 fullWidth
                 fullScreen
                 TransitionComponent={transition}
+                hideBackdrop
                 PaperProps={{
                     sx: {
                         maxHeight: height,
@@ -39,19 +42,22 @@ export default function CommonDialog(props: any) {
                     }
                 }}
             >
-                {value === 'day1' ? (
+                {data === 'day1' ? (
                     <Box />
                 ) : null}
-                {value === 'day2' ? (
+                {data === 'day2' ? (
                     <Box />
                 ) : null}
-                {value === 'contact' ? (
+                {data === 'contact' ? (
                     <Lead />
                 ) : null}
-                {value === 'office' ? (
+                {data === 'leadinfo' ? (
+                    <LeadDetails meta={meta} />
+                ) : null}
+                {data === 'office' ? (
                     <Office />
                 ) : null}
-                <Back light={light} func={dialogClose} />
+                <Back func={dialogClose} />
             </Dialog>
         </>
     )

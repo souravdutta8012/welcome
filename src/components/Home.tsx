@@ -101,7 +101,7 @@ export default function Home() {
 					</Box>
 				</Box>
 			</Box>
-			<CommonDialog open={open} setopen={setopen} value={value} setvalue={setvalue} light={light} />
+			<CommonDialog open={open} setopen={setopen} data={value} />
 		</>
 	);
 }

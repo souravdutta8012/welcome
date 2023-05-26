@@ -58,7 +58,7 @@ export default function Welcome() {
               Next
             </Button>
           </Box>
-          <Footer light={light} />
+          <Footer />
         </Box>
       </Box>
     </>

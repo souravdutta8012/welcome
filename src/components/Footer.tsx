@@ -1,7 +1,8 @@
 import { Box } from "@mui/material";
+import { getLight } from "../util/Function";
 
-export default function Footer(props: any) {
-  const { light } = props;
+export default function Footer() {
+  const light = getLight();
 
   return (
     <>
