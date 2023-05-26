@@ -17,7 +17,7 @@ export default function Welcome() {
       <Box className={light ? "Backdrop-light" : "Backdrop"}></Box>
       <Box className="Grad1"></Box>
       <Box className="Grad2 overflow-clip"></Box>
-      <Box className="flex flex-col justify-center items-center text-center gap-10 py-14">
+      <Box className="flex flex-col justify-center items-center text-center gap-10 pt-14">
         <Box>
           <Avatar alt="Remy Sharp" src={auth.image} className="w-36 h-36" />
         </Box>
