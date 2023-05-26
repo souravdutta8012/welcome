@@ -10,13 +10,13 @@ import { getLight } from "../util/Function";
 export default function Home() {
 	const [open, setopen] = useState(false);
 	const [value, setvalue] = useState(undefined);
-	const [height, setHeight] = useState(window.innerHeight - 345);
+	const [height, setHeight] = useState(window.innerHeight - 360);
 
 	const { auth } = useUserState();
 	const light = getLight();
 
 	useEffect(() => {
-		const handleWindowResize = () => setHeight(window.innerHeight - 345);
+		const handleWindowResize = () => setHeight(window.innerHeight - 360);
 		window.addEventListener("resize", handleWindowResize);
 		return () => window.removeEventListener("resize", handleWindowResize);
 	}, []);
