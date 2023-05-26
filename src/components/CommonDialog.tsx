@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
-import { Box, Dialog } from "@mui/material";
+import { Dialog } from "@mui/material";
 import { getLight, transition } from "../util/Function";
+import Day1 from "./Day1";
+import Day2 from "./Day2";
 import Lead from "./Lead";
 import LeadDetails from "./LeadDetails";
 import Office from "./Office";
@@ -43,10 +45,10 @@ export default function CommonDialog(props: any) {
                 }}
             >
                 {data === 'day1' ? (
-                    <Box />
+                    <Day1 />
                 ) : null}
                 {data === 'day2' ? (
-                    <Box />
+                    <Day2 />
                 ) : null}
                 {data === 'contact' ? (
                     <Lead />
