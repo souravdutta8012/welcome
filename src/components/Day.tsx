@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Box } from "@mui/material";
 import Calender from "./Calender";
+import Agenda from "./Agenda";
 import { Day1, Day2 } from "../Constant";
 
 export default function Day(props: any) {
@@ -8,6 +9,13 @@ export default function Day(props: any) {
 
     const [dated, setdated] = useState(date);
     const [dateinfo, setdateinfo] = useState<any>([]);
+    const [height, setHeight] = useState(window.innerHeight - 240);
+
+    useEffect(() => {
+        const handleWindowResize = () => setHeight(window.innerHeight - 240);
+        window.addEventListener("resize", handleWindowResize);
+        return () => window.removeEventListener("resize", handleWindowResize);
+    }, []);
 
     useEffect(() => {
         if (date === 15) {
@@ -24,11 +32,11 @@ export default function Day(props: any) {
                     dated={dated} setdated={setdated}
                     setdateinfo={setdateinfo}
                 />
-                {dateinfo?.map((t: any, i: number) => (
-                    <Box key={i}>
-                        {t?.time}
-                    </Box>
-                ))}
+                <Box className="pb-20 overflow-y-auto" sx={{ maxHeight: height }}>
+                    {dateinfo?.map((t: any, i: number) => (
+                        <Agenda key={i} schedule={t} />
+                    ))}
+                </Box>
             </Box>
         </>
     )

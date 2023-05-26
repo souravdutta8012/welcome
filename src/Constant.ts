@@ -46,6 +46,47 @@ export const Identities = [
 export const Day1 = [
     {
         time: "9:00 AM",
+        title: "Project Update",
+        task: [
+            "Discuss project updates, goals, and challenges.",
+            "Assign tasks and responsibilities for the day."
+        ]
+    },
+    {
+        time: "9:00 AM",
+        title: "Project Update",
+        task: [
+            "Discuss project updates, goals, and challenges.",
+            "Assign tasks and responsibilities for the day."
+        ]
+    },
+    {
+        time: "9:00 AM",
+        title: "Project Update",
+        task: [
+            "Discuss project updates, goals, and challenges.",
+            "Assign tasks and responsibilities for the day."
+        ]
+    },
+    {
+        time: "9:00 AM",
+        title: "Project Update",
+        task: [
+            "Discuss project updates, goals, and challenges.",
+            "Assign tasks and responsibilities for the day."
+        ]
+    },
+    {
+        time: "9:00 AM",
+        title: "Project Update",
+        task: [
+            "Discuss project updates, goals, and challenges.",
+            "Assign tasks and responsibilities for the day."
+        ]
+    },
+    {
+        time: "9:00 AM",
+        title: "Project Update",
         task: [
             "Discuss project updates, goals, and challenges.",
             "Assign tasks and responsibilities for the day."
@@ -56,9 +97,50 @@ export const Day1 = [
 export const Day2 = [
     {
         time: "9:30 AM",
+        title: "Project Update",
         task: [
             "Discuss project updates, goals, and challenges.",
             "Review any pending issues or concerns."
+        ]
+    },
+    {
+        time: "9:00 AM",
+        title: "Project Update",
+        task: [
+            "Discuss project updates, goals, and challenges.",
+            "Assign tasks and responsibilities for the day."
+        ]
+    },
+    {
+        time: "9:00 AM",
+        title: "Project Update",
+        task: [
+            "Discuss project updates, goals, and challenges.",
+            "Assign tasks and responsibilities for the day."
+        ]
+    },
+    {
+        time: "9:00 AM",
+        title: "Project Update",
+        task: [
+            "Discuss project updates, goals, and challenges.",
+            "Assign tasks and responsibilities for the day."
+        ]
+    },
+    {
+        time: "9:00 AM",
+        title: "Project Update",
+        task: [
+            "Discuss project updates, goals, and challenges.",
+            "Assign tasks and responsibilities for the day."
+        ]
+    },
+    {
+        time: "9:00 AM",
+        title: "Project Update",
+        task: [
+            "Discuss project updates, goals, and challenges.",
+            "Assign tasks and responsibilities for the day."
         ]
     }
 ];
