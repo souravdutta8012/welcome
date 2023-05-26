@@ -2,7 +2,7 @@ import { Badge, Box } from "@mui/material";
 import { getLight } from "../util/Function";
 
 export default function Calender(props: any) {
-    const { day } = props;
+    const { date } = props;
     const dates = [14, 15, 16, 17, 18];
 
     const light = getLight();
@@ -12,7 +12,7 @@ export default function Calender(props: any) {
             <Box className="flex justify-between items-center py-6">
                 {dates?.map((d: any) => (
                     <>
-                        {(d === day) ? (
+                        {(d === date) ? (
                             <>
                                 <Badge variant="dot" classes={{ badge: 'bg-primary-pink' }}>
                                     <Box className="flex flex-col justify-center items-center">
