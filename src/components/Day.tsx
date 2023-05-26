@@ -9,10 +9,10 @@ export default function Day(props: any) {
 
     const [dated, setdated] = useState(date);
     const [dateinfo, setdateinfo] = useState<any>([]);
-    const [height, setHeight] = useState(window.innerHeight - 240);
+    const [height, setHeight] = useState(window.innerHeight - 245);
 
     useEffect(() => {
-        const handleWindowResize = () => setHeight(window.innerHeight - 240);
+        const handleWindowResize = () => setHeight(window.innerHeight - 245);
         window.addEventListener("resize", handleWindowResize);
         return () => window.removeEventListener("resize", handleWindowResize);
     }, []);

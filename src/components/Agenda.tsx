@@ -9,7 +9,7 @@ export default function Agenda(props: any) {
 
     return (
         <>
-            <Box className="pb-6">
+            <Box className="py-3">
                 <Box className="flex flex-col">
                     <Box>
                         <span className="bg-secondary-blue px-2 py-1 rounded-t text-sm font-semibold text-primary-light">{schedule?.time}</span>
