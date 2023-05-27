@@ -35,7 +35,7 @@ export default function Home() {
 				<Video />
 				<Box className="overflow-y-auto" sx={{ maxHeight: height }}>
 					<Box>
-						<Box className={"text-center font-semibold text-lg tracking-widest pb-2 " + (light ? "text-primary-dark" : "text-secondary-gray")}>
+						<Box className={"text-center font-semibold text-lg tracking-widest pb-2 " + (light ? "text-secondary-gray" : "text-secondary-gray")}>
 							Itinerary
 						</Box>
 						<Box className="flex justify-around items-center pt-2 pb-8">
@@ -72,7 +72,7 @@ export default function Home() {
 						</Box>
 					</Box>
 					<Box>
-						<Box className={"text-center font-semibold text-lg tracking-widest pb-2 " + (light ? "text-primary-dark" : "text-secondary-gray")}>
+						<Box className={"text-center font-semibold text-lg tracking-widest pb-2 " + (light ? "text-secondary-gray" : "text-secondary-gray")}>
 							Profile Connect
 						</Box>
 						<Box className="flex justify-around items-center pt-2 pb-8">
