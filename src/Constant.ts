@@ -282,49 +282,41 @@ export const FoodData = {
         {
             name: 'Misal-Pav',
             details: "Kata Kirr is the best place to eat in Pune if you want some mouth-watering missal variety. You can choose between the light, medium and spicy versions of the dish, which means there's a misal pav for every palate here! This one is a crowd favourite.",
-            map: 'https://www.google.com/maps/search/misal+pav/',
             image: '/misalpav.svg'
         },
         {
             name: 'Vada-Pav',
             details: 'Garden Vada Pav Centre is One of the oldest and most Pune famous eatery, Garden Vada Pav Centre is legendary for serving (arguably) the most famous Vada Pav in Pune.',
-            map: 'https://www.google.com/maps/search/vada+pav/',
             image: '/vadapav.svg'
         },
         {
             name: 'Mango Mastani',
             details: "The name 'Mango Mastani' stems from the warrior princess Mastani's name who had floored the Peshwa king Bajirao with her beauty. Famous at Sujata Mastani.",
-            map: 'https://www.google.com/maps/search/mango+mastani/',
             image: '/mangomastani.svg'
         },
         {
             name: 'Bhakarwadi',
             details: 'Savoury roll that is stuffed with a wealth of spices and deep-fried. It is a tangy Indian snack and Chitale Bandhu mithaiWala is the best food place in Pune.',
-            map: 'https://www.google.com/maps/search/bhakarwadi/',
             image: '/bhakarwadi.svg'
         },
         {
             name: 'Kheema / Bun Maska',
             details: 'Cafe Goodluck of Deccan Gymkhana is one of the oldest Irani cafe restaurants in Pune. Bun Maska, Cheese Omelette and Keema Bread are the most popular breakfast items for Punekars. It is one of the best eating places in Pune.',
-            map: 'https://www.google.com/maps/search/bun+maska/',
             image: '/kheemabunmaska.svg'
         },
         {
             name: 'Pithala Bhakri',
             details: 'Pithala or Besan Pithala along with Bhakri also known as Zunka Bhakri is a vegetarian traditional Maharashtrian dish served with onion and Thecha. Sinhgad fort is best to try this dish.',
-            map: 'https://www.google.com/maps/search/pithala+bhakri/',
             image: '/pithalabhakri.svg'
         },
         {
             name: 'Maharashtrian Thali',
             details: 'The Maharashtrian Thali was an amazing culinary experience to taste the local cuisine. Shabree Restaurant offers authentic Maharashtrian thali.',
-            map: 'https://www.google.com/maps/search/maharashtrian+thali/',
             image: '/maharashtrianthali.svg'
         },
         {
             name: 'Shrewsbury Biscuits',
             details: 'The famous Kayani bakery is best to eat Golden, buttery, melt-in-your-mouth Shrewsbury biscuits. Loads of butter, some sugar baked to finesse give these biscuits an amazing crunch and the sand like texture while you eat it.',
-            map: 'https://www.google.com/maps/search/shrewsbury+biscuits/',
             image: '/shrewsburybiscuits.svg'
         }
     ],
@@ -332,7 +324,6 @@ export const FoodData = {
         {
             name: '',
             details: '',
-            map: '',
             image: '/.svg'
         }
     ]

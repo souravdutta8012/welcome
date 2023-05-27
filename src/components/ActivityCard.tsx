@@ -16,14 +16,16 @@ export default function ActivityCard(props: any) {
                 <Box>
                     <Box className="relative">
                         <img src={data?.image} />
-                        <Box className="absolute bottom-2 right-2">
-                            <a rel="noopener noreferrer" target="_blank" href={data?.map}>
-                                <Button className="capitalize bg-secondary-blue rounded-md" size="small" variant="contained" >
-                                    <LocationOn className="text-sm mr-1 mb-1" />
-                                    Map
-                                </Button>
-                            </a>
-                        </Box>
+                        {data?.map ? (
+                            <Box className="absolute bottom-2 right-2">
+                                <a rel="noopener noreferrer" target="_blank" href={data?.map}>
+                                    <Button className="capitalize bg-secondary-blue rounded-md" size="small" variant="contained" >
+                                        <LocationOn className="text-sm mr-1 mb-1" />
+                                        Map
+                                    </Button>
+                                </a>
+                            </Box>
+                        ) : null}
                     </Box>
                 </Box>
                 <Box className={"" + (light ? "text-primary-dark" : "text-primary-gray")}>
