@@ -24,7 +24,8 @@ export default function Office() {
                     </Box>
                     <Box>
                         <a rel="noopener noreferrer" target="_blank" href={Pune?.map}>
-                            <Button className="capitalize bg-secondary-blue" size="small" variant="contained" startIcon={<LocationOn className="pb-1" />}>
+                            <Button className="capitalize bg-secondary-blue" size="small" variant="contained">
+                                <LocationOn className="text-sm mr-1 mb-1" />
                                 Map
                             </Button>
                         </a>

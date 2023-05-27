@@ -62,13 +62,13 @@ export default function CommonDialog(props: any) {
                     <Office />
                 ) : null}
                 {data?.includes('explore') ? (
-                    <Explore />
+                    <Explore data={data} />
                 ) : null}
                 {data?.includes('food') ? (
-                    <Food />
+                    <Food data={data} />
                 ) : null}
                 {data?.includes('shop') ? (
-                    <Shop />
+                    <Shop data={data} />
                 ) : null}
                 <Back func={dialogClose} />
             </Dialog>

@@ -226,14 +226,92 @@ export const Pune = {
             Pune famous beautiful gardens and hills like saras Baug, Express Garden, pu la Deshpande Garden (replica of a Japanese garden), kamala Nehru park and hills of Parvati, hanuman tekdi, vetal tekdi and ARAI offers the best view in the city. Pune is famous for museums, historical monuments, worshipping centres, shopping hubs, and the state's best monsoon getaways.`
 };
 
-export const Place = {
+export const ExploreData = {
     image: '/place.svg',
+    pune: [
+        {
+            name: 'Shaniwar Wada',
+            details: 'Shaniwar Wada is a historical fortification in the city of Pune, India. Built in 1732, it was the great seat of the Peshwas of the Maratha Empire until 1818. Following the rise of the Maratha Empire, the palace became the center of Indian politics in the 18th century.',
+            map: 'https://www.google.com/maps/place/Shaniwar+Wada/@18.5194698,73.8527426,17z/data=!3m1!4b1!4m6!3m5!1s0x3bc2c065144d8edf:0x3703b8095866c54b!8m2!3d18.5194647!4d73.8553175!16zL20vMDJ6aDh2?entry=ttu',
+            image: '/shaniwarwada.svg'
+        },
+        {
+            name: 'Shreemant Dagdusheth Halwai Ganpati Mandir',
+            details: 'The Dagadusheth Halwai Ganapati temple is a Hindu Temple located in Pune and is dedicated to the Hindu god Ganesh. The temple is visited by over hundred thousand pilgrims every year. Devotees of the temple include celebrities and chief ministers of Maharashtra who visit during the annual ten-day Ganeshotsav festival.',
+            map: 'https://www.google.com/maps/place/Shreemant+Dagdusheth+Halwai+Ganpati+Mandir/@18.5166105,73.8535453,17z/data=!3m1!4b1!4m6!3m5!1s0x3bc2c06fa5b442ff:0x9df365f5b648bce1!8m2!3d18.5166054!4d73.8561202!16s%2Fm%2F04zxxlg?entry=ttu',
+            image: '/shreemantdagdushethhalwaiganpatimandir.svg'
+        },
+        {
+            name: 'Aga Khan Palace',
+            details: 'The Aga Khan Palace was built by Sultan Muhammed Shah Aga Khan III in the city of Pune, India. The palace was an act of charity by the spiritual leader of the Nizari Ismaili Muslims, who wanted to help the poor in the neighbouring areas of Pune, who were drastically hit by famine by offering them work.',
+            map: 'https://www.google.com/maps/place/Aga+Khan+Palace/@18.5524993,73.8988814,17z/data=!3m1!4b1!4m6!3m5!1s0x3bc2c11768711b1b:0xac1ba97447d569f4!8m2!3d18.5524942!4d73.9014563!16zL20vMGI4MTFj?entry=ttu',
+            image: '/agakhanpalace.svg'
+        },
+        {
+            name: 'Raja Dinkar Kelkar Museum',
+            details: 'The Raja Dinkar Kelkar Museum is in Pune, Maharashtra, India. It contains the collection of Dr. Dinkar G. Kelkar, dedicated to the memory of his only son, Raja. The three-storey building houses various sculptures dating back to the 14th century.',
+            map: 'https://www.google.com/maps/place/Raja+Dinkar+Kelkar+Museum/@18.5106906,73.8518558,17z/data=!3m1!4b1!4m6!3m5!1s0x3bc2c073c7e01df5:0x45cf6b0362946df3!8m2!3d18.5106855!4d73.8544307!16zL20vMGd6MDE1?entry=ttu',
+            image: '/rajadinkarkelkarmuseum.svg'
+        },
+        {
+            name: 'Sinhagad Fort',
+            details: 'Sinhagad is an ancient hill fortress located at around 49 km southwest of the city of Pune, India. Previously known as Kondhana, the fort had been the site of many battles, most notably the Battle of Sinhagad in 1670. It is Located near the Pune district in Maharashtra.',
+            map: 'https://www.google.com/maps/place/Sinhagad+Fort/@18.3662821,73.7533028,17z/data=!3m1!4b1!4m6!3m5!1s0x3bc293e6861118d9:0xcbb4d589c7d4e90b!8m2!3d18.366277!4d73.7558777!16zL20vMDVra3lk?entry=ttu',
+            image: '/sinhagadfort.svg'
+        },
+        {
+            name: 'Lal Mahal',
+            details: 'The Lal Mahal of Pune is one of the most famous monuments located in Pune, India, where Chhatrapati Shivaji Maharaj, founder of the Maratha Empire spent his childhood.',
+            map: 'https://www.google.com/maps/place/Lal+Mahal/@18.5187484,73.8540734,17z/data=!3m1!4b1!4m6!3m5!1s0x3bc2c065793c91a1:0x4a206d80daf21f92!8m2!3d18.5187433!4d73.8566483!16s%2Fm%2F05b_7gy?entry=ttu',
+            image: '/lalmahal.svg'
+        }
+    ],
+    bangalore: [
+        {
+            name: '',
+            details: '',
+            map: '',
+            image: ''
+        }
+    ]
 };
 
-export const Food = {
+export const FoodData = {
     image: '/food.svg',
+    pune: [
+        {
+            name: '',
+            details: '',
+            map: '',
+            image: ''
+        }
+    ],
+    bangalore: [
+        {
+            name: '',
+            details: '',
+            map: '',
+            image: ''
+        }
+    ]
 };
 
-export const Shop = {
+export const ShopData = {
     image: '/shop.svg',
+    pune: [
+        {
+            name: '',
+            details: '',
+            map: '',
+            image: ''
+        }
+    ],
+    bangalore: [
+        {
+            name: '',
+            details: '',
+            map: '',
+            image: ''
+        }
+    ]
 };

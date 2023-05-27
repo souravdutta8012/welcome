@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Avatar, Box } from "@mui/material";
 import CommonDialog from "./CommonDialog";
-import { Food, Place, Shop } from "../Constant";
+import { ExploreData, FoodData, ShopData } from "../Constant";
 
 export default function Activity(props: any) {
     const { location } = props;
@@ -23,7 +23,7 @@ export default function Activity(props: any) {
                             <Box className={"absolute h-full w-full flex justify-center items-center z-20 font-semibold text-primary-light rounded-full " + (location === 'pune' ? "bg-primary-blue/40" : "bg-secondary-red/50")}>
                                 Explore
                             </Box>
-                            <Avatar alt="Remy Sharp" src={Place.image} className="w-24 h-24 border border-primary-dark" />
+                            <Avatar alt="Remy Sharp" src={ExploreData.image} className="w-24 h-24 border border-primary-dark" />
                         </Box>
                     </div>
                     <div onClick={() => openDialog(('food ' + location))}>
@@ -31,7 +31,7 @@ export default function Activity(props: any) {
                             <Box className={"absolute h-full w-full flex justify-center items-center z-20 font-semibold text-primary-light rounded-full " + (location === 'pune' ? "bg-primary-blue/40" : "bg-secondary-red/50")}>
                                 Food
                             </Box>
-                            <Avatar alt="Remy Sharp" src={Food.image} className="w-24 h-24 border border-primary-dark" />
+                            <Avatar alt="Remy Sharp" src={FoodData.image} className="w-24 h-24 border border-primary-dark" />
                         </Box>
                     </div>
                     <div onClick={() => openDialog(('shop ' + location))}>
@@ -39,7 +39,7 @@ export default function Activity(props: any) {
                             <Box className={"absolute h-full w-full flex justify-center items-center z-20 font-semibold text-primary-light rounded-full " + (location === 'pune' ? "bg-primary-blue/40" : "bg-secondary-red/50")}>
                                 Shopping
                             </Box>
-                            <Avatar alt="Remy Sharp" src={Shop.image} className="w-24 h-24 border border-primary-dark" />
+                            <Avatar alt="Remy Sharp" src={ShopData.image} className="w-24 h-24 border border-primary-dark" />
                         </Box>
                     </div>
                 </Box>
