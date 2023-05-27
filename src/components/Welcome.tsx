@@ -30,7 +30,7 @@ export default function Welcome() {
         </Box>
       </Box>
       <Box className="absolute bottom-0 w-full px-6">
-        <Box className="flex justify-center items-center py-10">
+        <Box className="flex justify-center items-center py-16">
           {light ? (
             <Box className=" border-2 border-primary-dark p-2 rounded-lg">
               <IconButton size="small" onClick={() => setTheme("dark")}>
