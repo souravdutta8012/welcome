@@ -49,19 +49,21 @@ export const Day1 = [
         title: "Project Update",
         task: [
             "Discuss project updates, goals, and challenges.",
-            "Assign tasks and responsibilities for the day."
+            "Assign tasks and responsibilities for the day.",
+            "Discuss project updates, goals, and challenges."
         ]
     },
     {
-        time: "9:00 AM",
+        time: "9:30 AM",
         title: "Project Update",
         task: [
             "Discuss project updates, goals, and challenges.",
+            "Assign tasks and responsibilities for the day.",
             "Assign tasks and responsibilities for the day."
         ]
     },
     {
-        time: "9:00 AM",
+        time: "10:30 AM",
         title: "Project Update",
         task: [
             "Discuss project updates, goals, and challenges.",
@@ -104,18 +106,16 @@ export const Day2 = [
         ]
     },
     {
-        time: "9:00 AM",
+        time: "10:00 AM",
         title: "Project Update",
         task: [
             "Discuss project updates, goals, and challenges.",
-            "Assign tasks and responsibilities for the day."
         ]
     },
     {
-        time: "9:00 AM",
+        time: "11:00 AM",
         title: "Project Update",
         task: [
-            "Discuss project updates, goals, and challenges.",
             "Assign tasks and responsibilities for the day."
         ]
     },
