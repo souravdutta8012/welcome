@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import { Box } from "@mui/material";
-import { CalendarTodayOutlined, MoreOutlined, PermContactCalendarOutlined } from "@mui/icons-material";
 import CommonDialog from "./CommonDialog";
 import NameCard from "./NameCard";
 import Video from "./Video";
@@ -36,14 +35,14 @@ export default function Home() {
 				<Video />
 				<Box className="overflow-y-auto" sx={{ maxHeight: height }}>
 					<Box>
-						<Box className={"text-center font-semibold text-lg tracking-widest pb-2 " + (light ? "text-primary-dark" : "text-secondary-gray")}>
+						<Box className={"text-center font-semibold text-lg tracking-widest pb-2 " + (light ? "text-secondary-gray" : "text-secondary-gray")}>
 							Itinerary
 						</Box>
 						<Box className="flex justify-around items-center pt-2 pb-8">
 							<Box>
 								<Box className={"w-32 h-32 rounded-lg bg-gradient-to-bl " + (light ? "from-secondary-blue to-primary-blue" : "from-primary-pink to-primary-blue")}>
 									<div className="flex w-full h-full justify-center items-center" onClick={() => openDialog('day1')}>
-										<CalendarTodayOutlined className={"text-4xl " + (light ? "text-primary-light" : "text-primary-light")} />
+										<img src="/calendar.svg" className={"" + (light ? "text-primary-light" : "text-primary-light")} />
 									</div>
 								</Box>
 								<Box className="text-center pt-2">
@@ -58,7 +57,7 @@ export default function Home() {
 							<Box>
 								<Box className={"w-32 h-32 rounded-lg bg-gradient-to-bl " + (light ? "from-secondary-blue to-primary-blue" : "from-primary-pink to-primary-blue")}>
 									<div className="flex w-full h-full justify-center items-center" onClick={() => openDialog('day2')}>
-										<CalendarTodayOutlined className={"text-4xl " + (light ? "text-primary-light" : "text-primary-light")} />
+										<img src="/calendar.svg" className={"" + (light ? "text-primary-light" : "text-primary-light")} />
 									</div>
 								</Box>
 								<Box className="text-center pt-2">
@@ -73,14 +72,14 @@ export default function Home() {
 						</Box>
 					</Box>
 					<Box>
-						<Box className={"text-center font-semibold text-lg tracking-widest pb-2 " + (light ? "text-primary-dark" : "text-secondary-gray")}>
+						<Box className={"text-center font-semibold text-lg tracking-widest pb-2 " + (light ? "text-secondary-gray" : "text-secondary-gray")}>
 							Profile Connect
 						</Box>
 						<Box className="flex justify-around items-center pt-2 pb-8">
 							<Box>
 								<Box className={"w-32 h-32 rounded-lg bg-gradient-to-bl " + (light ? "from-secondary-blue to-primary-blue" : "from-primary-pink to-primary-blue")}>
 									<div className="flex w-full h-full justify-center items-center" onClick={() => openDialog('contact')}>
-										<PermContactCalendarOutlined className={"text-4xl " + (light ? "text-primary-light" : "text-primary-light")} />
+										<img src="/contact.svg" className={"" + (light ? "text-primary-light" : "text-primary-light")} />
 									</div>
 								</Box>
 								<Box className="text-center pt-2">
@@ -95,7 +94,7 @@ export default function Home() {
 							<Box>
 								<Box className={"w-32 h-32 rounded-lg bg-gradient-to-bl " + (light ? "from-secondary-blue to-primary-blue" : "from-primary-pink to-primary-blue")}>
 									<div className="flex w-full h-full justify-center items-center" onClick={() => openDialog('office')}>
-										<MoreOutlined className={"rotate-90 text-4xl " + (light ? "text-primary-light" : "text-primary-light")} />
+										<img src="/office.svg" className={"" + (light ? "text-primary-light" : "text-primary-light")} />
 									</div>
 								</Box>
 								<Box className="text-center pt-2">
