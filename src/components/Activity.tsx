@@ -6,7 +6,7 @@ export default function Activity(props: any) {
 
     return (
         <>
-            <Box className="pt-5 pb-10">
+            <Box className="pt-8 pb-10">
                 <Box className="flex justify-around items-center">
                     <Box className="relative">
                         <Box className={"absolute h-full w-full flex justify-center items-center z-20 font-semibold text-primary-light rounded-full " + (location === 'pune' ? "bg-primary-blue/40" : "bg-secondary-red/50")}>

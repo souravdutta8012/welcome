@@ -128,7 +128,7 @@ export default function Home() {
 					</Box>
 					<Box>
 						<Box>
-							<Tabs classes={{ indicator: 'bg-transparent', flexContainer: 'justify-around' }} value={tab} onChange={handleChange}>
+							<Tabs classes={{ indicator: 'bg-secondary-gray', flexContainer: 'justify-around' }} value={tab} onChange={handleChange}>
 								<Tab className={"capitalize text-lg " + ((tab === 0 && light) ? "font-semibold text-primary-dark" : ((tab === 0 && !light) ? "font-semibold text-primary-light" : "text-secondary-gray"))} label="Pune" />
 								<Tab className={"capitalize text-lg " + ((tab === 1 && light) ? "font-semibold text-primary-dark" : ((tab === 1 && !light) ? "font-semibold text-primary-light" : "text-secondary-gray"))} label="Bangalore" />
 							</Tabs>
