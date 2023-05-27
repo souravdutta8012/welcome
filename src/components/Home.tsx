@@ -67,7 +67,7 @@ export default function Home() {
 									<Box className={"font-semibold " + (light ? "text-primary-dark" : "text-primary-light")}>
 										Day 1
 									</Box>
-									<Box className={"text-sm " + (light ? "text-secondary-purple" : "text-secondary-gray")}>
+									<Box className={"text-sm " + (light ? "text-secondary-purple" : "text-primary-gray")}>
 										View Program
 									</Box>
 								</Box>
@@ -82,7 +82,7 @@ export default function Home() {
 									<Box className={"font-semibold " + (light ? "text-primary-dark" : "text-primary-light")}>
 										Day 2
 									</Box>
-									<Box className={"text-sm " + (light ? "text-secondary-purple" : "text-secondary-gray")}>
+									<Box className={"text-sm " + (light ? "text-secondary-purple" : "text-primary-gray")}>
 										View Program
 									</Box>
 								</Box>
@@ -104,7 +104,7 @@ export default function Home() {
 									<Box className={"font-semibold " + (light ? "text-primary-dark" : "text-primary-light")}>
 										Contact
 									</Box>
-									<Box className={"text-sm " + (light ? "text-secondary-purple" : "text-secondary-gray")}>
+									<Box className={"text-sm " + (light ? "text-secondary-purple" : "text-primary-gray")}>
 										TCS Leadership
 									</Box>
 								</Box>
@@ -119,7 +119,7 @@ export default function Home() {
 									<Box className={"font-semibold " + (light ? "text-primary-dark" : "text-primary-light")}>
 										Pune Office
 									</Box>
-									<Box className={"text-sm " + (light ? "text-secondary-purple" : "text-secondary-gray")}>
+									<Box className={"text-sm " + (light ? "text-secondary-purple" : "text-primary-gray")}>
 										TCS Pune Office
 									</Box>
 								</Box>
