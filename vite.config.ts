@@ -5,7 +5,7 @@ export default defineConfig({
   plugins: [
     VitePWA({
       registerType: 'autoUpdate',
-      includeAssets: ['favicon.ico', 'test.png'],
+      includeAssets: ['favicon.png'],
       manifest: {
         name: 'Welcome',
         short_name: 'Welcome',
@@ -13,17 +13,17 @@ export default defineConfig({
         theme_color: '#ffffff',
         icons: [
           {
-            src: 'test.png',
+            src: 'favicon.png',
             sizes: '144x144',
             type: 'image/png'
           },
           {
-            src: 'test.png',
+            src: 'favicon.png',
             sizes: '192x192',
             type: 'image/png'
           },
           {
-            src: 'test.png',
+            src: 'favicon.png',
             sizes: '512x512',
             type: 'image/png',
             purpose: 'any muskable'
