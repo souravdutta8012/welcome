@@ -282,49 +282,49 @@ export const FoodData = {
         {
             name: 'Misal-Pav',
             details: "Kata Kirr is the best place to eat in Pune if you want some mouth-watering missal variety. You can choose between the light, medium and spicy versions of the dish, which means there's a misal pav for every palate here! This one is a crowd favourite.",
-            map: '',
+            map: 'https://www.google.com/maps/search/misal+pav/',
             image: '/misalpav.svg'
         },
         {
             name: 'Vada-Pav',
             details: 'Garden Vada Pav Centre is One of the oldest and most Pune famous eatery, Garden Vada Pav Centre is legendary for serving (arguably) the most famous Vada Pav in Pune.',
-            map: '',
+            map: 'https://www.google.com/maps/search/vada+pav/',
             image: '/vadapav.svg'
         },
         {
             name: 'Mango Mastani',
             details: "The name 'Mango Mastani' stems from the warrior princess Mastani's name who had floored the Peshwa king Bajirao with her beauty. Famous at Sujata Mastani.",
-            map: '',
+            map: 'https://www.google.com/maps/search/mango+mastani/',
             image: '/mangomastani.svg'
         },
         {
             name: 'Bhakarwadi',
             details: 'Savoury roll that is stuffed with a wealth of spices and deep-fried. It is a tangy Indian snack and Chitale Bandhu mithaiWala is the best food place in Pune.',
-            map: '',
+            map: 'https://www.google.com/maps/search/bhakarwadi/',
             image: '/bhakarwadi.svg'
         },
         {
-            name: 'Kheema / Ban Maska',
+            name: 'Kheema / Bun Maska',
             details: 'Cafe Goodluck of Deccan Gymkhana is one of the oldest Irani cafe restaurants in Pune. Bun Maska, Cheese Omelette and Keema Bread are the most popular breakfast items for Punekars. It is one of the best eating places in Pune.',
-            map: '',
-            image: '/kheemabanmaska.svg'
+            map: 'https://www.google.com/maps/search/bun+maska/',
+            image: '/kheemabunmaska.svg'
         },
         {
             name: 'Pithala Bhakri',
             details: 'Pithala or Besan Pithala along with Bhakri also known as Zunka Bhakri is a vegetarian traditional Maharashtrian dish served with onion and Thecha. Sinhgad fort is best to try this dish.',
-            map: '',
+            map: 'https://www.google.com/maps/search/pithala+bhakri/',
             image: '/pithalabhakri.svg'
         },
         {
             name: 'Maharashtrian Thali',
             details: 'The Maharashtrian Thali was an amazing culinary experience to taste the local cuisine. Shabree Restaurant offers authentic Maharashtrian thali.',
-            map: '',
+            map: 'https://www.google.com/maps/search/maharashtrian+thali/',
             image: '/maharashtrianthali.svg'
         },
         {
             name: 'Shrewsbury Biscuits',
             details: 'The famous Kayani bakery is best to eat Golden, buttery, melt-in-your-mouth Shrewsbury biscuits. Loads of butter, some sugar baked to finesse give these biscuits an amazing crunch and the sand like texture while you eat it.',
-            map: '',
+            map: 'https://www.google.com/maps/search/shrewsbury+biscuits/',
             image: '/shrewsburybiscuits.svg'
         }
     ],
@@ -344,25 +344,25 @@ export const ShopData = {
         {
             name: 'Juna Bazar',
             details: 'The market is more oriented towards vintage artefacts, antique handicrafts, brass statues, paintings and many more. Some of the stuff you can find here are typewriters, coins, telescopes, vinyl records, music instruments, portraits, and posters.',
-            map: '',
+            map: 'https://www.google.com/maps/place/Juna+Bazar,+Kasba+Peth,+Pune,+Maharashtra/@18.5263775,73.8591095,18z/data=!3m1!4b1!4m6!3m5!1s0x3bc2c0616f0a2469:0x32aa1d556c044c27!8m2!3d18.5268805!4d73.8599165!16s%2Fg%2F12hk69f1_?entry=ttu',
             image: '/junabazar.svg'
         },
         {
             name: 'Chhatrapati Sambhaji Nagar',
             details: 'Popularly known as Deccan Gymkhana, it is a small-scale market known for its fruits and food. Many shops sell leather products. This one is a one-stop destination for shopping at Pune and is particularly famous for traditional sweets, flowers, and gift items.',
-            map: '',
+            map: 'https://www.google.com/maps/place/Deccan+Gymkhana,+Pune,+Maharashtra+411004/@18.5167959,73.8319488,16z/data=!3m1!4b1!4m6!3m5!1s0x3bc2bf8f302a2f7d:0xae8576b1d65c2e64!8m2!3d18.5165436!4d73.8366021!16s%2Fm%2F07s5kz1?entry=ttu',
             image: '/chhatrapatisambhajinagar.svg'
         },
         {
             name: 'Clover Centre',
             details: 'This place at MG Road provides an exceptionally affordable shopping experience in Pune. There are several variety available of jewelry and accessories. From embroidered juttis to denim backpacks, tailors, customized fitting you have it all here. Clove Centre is a hub of innumerable shops in one complex.',
-            map: '',
+            map: 'https://www.google.com/maps/place/Clover+Center,+Moledina+Rd,+Camp,+Pune,+Maharashtra+411001/@18.5180862,73.8756717,17z/data=!3m1!4b1!4m6!3m5!1s0x3bc2c04f90cde437:0x98ddb6a3300f56a5!8m2!3d18.5180811!4d73.8782466!16s%2Fg%2F1ptxc_d6k?entry=ttu',
             image: '/clovercentre.svg'
         },
         {
             name: 'Laxmi Road',
             details: 'Located in the older part of the city, Laxmi Road is almost like its very heart. One of the oldest and most well-known markets in Pune, it is famous for its traditional wares such as Paithani Sarees, silk sarees, designer sarees etc. However, this shopping paradise has something for everyone.',
-            map: '',
+            map: 'https://www.google.com/maps/place/Laxmi+Rd,+Ganesh+Peth,+Pune,+Maharashtra/@18.5153829,73.8631022,17z/data=!3m1!4b1!4m6!3m5!1s0x3bc2c071050b5d19:0x918944707a47fa01!8m2!3d18.5153778!4d73.8656771!16s%2Fg%2F1tdb78pf?entry=ttu',
             image: '/laxmiroad.svg'
         }
     ],
