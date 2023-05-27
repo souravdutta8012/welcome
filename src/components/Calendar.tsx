@@ -9,12 +9,18 @@ export default function Calendar(props: any) {
     const light = getLight();
 
     const changeDate = (date: any) => {
-        setdated(date);
         if (date === 15) {
-            setdateinfo(Day1);
+            setdateinfo([]);
+            setTimeout(() => {
+                setdateinfo(Day1);
+            }, 0);
         } else {
-            setdateinfo(Day2);
+            setdateinfo([]);
+            setTimeout(() => {
+                setdateinfo(Day2);
+            }, 0);
         }
+        setdated(date);
     };
 
     return (
