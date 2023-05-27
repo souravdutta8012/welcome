@@ -6,8 +6,8 @@
   "scripts": {
     "start": "vite --port 3000",
     "build": "tsc && vite build",
-    "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview --port 3000"
+    "preview": "tsc && vite build && serve -s build",
+    "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0"
   },
   "dependencies": {
     "@emotion/react": "^11.11.0",

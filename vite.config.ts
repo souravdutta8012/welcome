@@ -10,7 +10,12 @@ export default defineConfig({
         name: 'Welcome',
         short_name: 'Welcome',
         description: 'Welcome',
-        theme_color: '#ffffff',
+        theme_color: '#1E2323',
+        display: "standalone",
+        lang: "en",
+        start_url: "/",
+        scope: "/",
+        id: "/",
         icons: [
           {
             src: 'favicon.png',
