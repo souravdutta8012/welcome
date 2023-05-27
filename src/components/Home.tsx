@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Box } from "@mui/material";
+import { Box, Tab, Tabs } from "@mui/material";
 import CommonDialog from "./CommonDialog";
 import NameCard from "./NameCard";
 import Video from "./Video";
@@ -9,6 +9,8 @@ import { getLight } from "../util/Function";
 export default function Home() {
 	const [open, setopen] = useState(false);
 	const [value, setvalue] = useState(undefined);
+	const [tab, settab] = useState(0);
+
 	const [height, setHeight] = useState(window.innerHeight - 350);
 
 	const { auth } = useUserState();
@@ -23,6 +25,21 @@ export default function Home() {
 	const openDialog = (value: any) => {
 		setopen(true);
 		setvalue(value);
+	};
+
+	const TabPanel = (props: any) => {
+		const { children, value, index } = props;
+		return (
+			<>
+				{value === index && (
+					<Box>{children}</Box>
+				)}
+			</>
+		);
+	};
+
+	const handleChange = (_event: React.SyntheticEvent, newValue: number) => {
+		settab(newValue);
 	};
 
 	return (
@@ -106,6 +123,20 @@ export default function Home() {
 									</Box>
 								</Box>
 							</Box>
+						</Box>
+					</Box>
+					<Box>
+						<Box>
+							<Tabs classes={{ indicator: 'bg-transparent', flexContainer: 'justify-around' }} value={tab} onChange={handleChange}>
+								<Tab className={"capitalize text-lg " + ((tab === 0 && light) ? "font-semibold text-primary-dark" : ((tab === 0 && !light) ? "font-semibold text-primary-light" : "text-secondary-gray"))} label="Pune" />
+								<Tab className={"capitalize text-lg " + ((tab === 1 && light) ? "font-semibold text-primary-dark" : ((tab === 1 && !light) ? "font-semibold text-primary-light" : "text-secondary-gray"))} label="Bangalore" />
+							</Tabs>
+							<TabPanel value={tab} index={0}>
+								<Box />
+							</TabPanel>
+							<TabPanel value={tab} index={1}>
+								<Box />
+							</TabPanel>
 						</Box>
 					</Box>
 				</Box>
