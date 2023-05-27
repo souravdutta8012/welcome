@@ -11,6 +11,7 @@ export default defineConfig({
         short_name: 'Welcome',
         description: 'Welcome',
         theme_color: '#1E2323',
+        background_color: '#1E2323',
         display: "standalone",
         lang: "en",
         start_url: "/",
