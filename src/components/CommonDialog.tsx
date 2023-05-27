@@ -5,6 +5,9 @@ import Day from "./Day";
 import Lead from "./Lead";
 import LeadDetails from "./LeadDetails";
 import Office from "./Office";
+import Explore from "./Explore";
+import Food from "./Food";
+import Shop from "./Shop";
 import Back from "./Back";
 
 export default function CommonDialog(props: any) {
@@ -57,6 +60,15 @@ export default function CommonDialog(props: any) {
                 ) : null}
                 {data === 'office' ? (
                     <Office />
+                ) : null}
+                {data?.includes('explore') ? (
+                    <Explore data={data} />
+                ) : null}
+                {data?.includes('food') ? (
+                    <Food data={data} />
+                ) : null}
+                {data?.includes('shop') ? (
+                    <Shop data={data} />
                 ) : null}
                 <Back func={dialogClose} />
             </Dialog>

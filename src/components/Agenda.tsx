@@ -14,7 +14,7 @@ export default function Agenda(props: any) {
                     <Box>
                         <span className="bg-secondary-blue px-2 py-1 rounded-t text-sm font-semibold text-primary-light">{schedule?.time}</span>
                     </Box>
-                    <Box className="p-2 border-secondary-blue border-2 rounded-r-lg rounded-bl-lg">
+                    <Box className="p-2 border-secondary-blue border-2 rounded-b-lg rounded-tr-lg">
                         <Box className={"font-semibold pb-2 " + (light ? "text-primary-dark" : "text-primary-light")}>
                             {schedule?.title}
                         </Box>

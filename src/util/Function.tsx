@@ -2,6 +2,10 @@ import { forwardRef } from "react";
 import { Slide } from "@mui/material";
 import { TransitionProps } from "@mui/material/transitions";
 
+export const getName = () => {
+    return localStorage.getItem('name') || "";
+};
+
 export const getLight = () => {
     return localStorage.getItem('theme') === 'light';
 };

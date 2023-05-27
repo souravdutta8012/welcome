@@ -35,6 +35,7 @@ const findUser = (name: string) => {
     let user = undefined;
     Identities?.forEach((i: any) => {
         if (i?.name?.toLowerCase()?.replaceAll(" ", "") === name?.toLowerCase().replaceAll(" ", "")) {
+            localStorage.setItem("name", name?.toLowerCase().replaceAll(" ", ""));
             user = i;
         }
     });

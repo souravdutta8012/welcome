@@ -1,21 +1,24 @@
 import { useEffect, useState } from "react";
-import { Box } from "@mui/material";
+import { Box, Tab, Tabs } from "@mui/material";
 import CommonDialog from "./CommonDialog";
 import NameCard from "./NameCard";
 import Video from "./Video";
+import Activity from "./Activity";
 import { useUserState } from "../util/User";
 import { getLight } from "../util/Function";
 
 export default function Home() {
 	const [open, setopen] = useState(false);
 	const [value, setvalue] = useState(undefined);
-	const [height, setHeight] = useState(window.innerHeight - 360);
+	const [tab, settab] = useState(0);
+
+	const [height, setHeight] = useState(window.innerHeight - 350);
 
 	const { auth } = useUserState();
 	const light = getLight();
 
 	useEffect(() => {
-		const handleWindowResize = () => setHeight(window.innerHeight - 360);
+		const handleWindowResize = () => setHeight(window.innerHeight - 350);
 		window.addEventListener("resize", handleWindowResize);
 		return () => window.removeEventListener("resize", handleWindowResize);
 	}, []);
@@ -23,6 +26,21 @@ export default function Home() {
 	const openDialog = (value: any) => {
 		setopen(true);
 		setvalue(value);
+	};
+
+	const TabPanel = (props: any) => {
+		const { children, value, index } = props;
+		return (
+			<>
+				{value === index && (
+					<Box>{children}</Box>
+				)}
+			</>
+		);
+	};
+
+	const handleChange = (_event: React.SyntheticEvent, newValue: number) => {
+		settab(newValue);
 	};
 
 	return (
@@ -49,7 +67,7 @@ export default function Home() {
 									<Box className={"font-semibold " + (light ? "text-primary-dark" : "text-primary-light")}>
 										Day 1
 									</Box>
-									<Box className={"text-sm " + (light ? "text-secondary-purple" : "text-secondary-gray")}>
+									<Box className={"text-sm " + (light ? "text-secondary-purple" : "text-primary-gray")}>
 										View Program
 									</Box>
 								</Box>
@@ -64,7 +82,7 @@ export default function Home() {
 									<Box className={"font-semibold " + (light ? "text-primary-dark" : "text-primary-light")}>
 										Day 2
 									</Box>
-									<Box className={"text-sm " + (light ? "text-secondary-purple" : "text-secondary-gray")}>
+									<Box className={"text-sm " + (light ? "text-secondary-purple" : "text-primary-gray")}>
 										View Program
 									</Box>
 								</Box>
@@ -86,7 +104,7 @@ export default function Home() {
 									<Box className={"font-semibold " + (light ? "text-primary-dark" : "text-primary-light")}>
 										Contact
 									</Box>
-									<Box className={"text-sm " + (light ? "text-secondary-purple" : "text-secondary-gray")}>
+									<Box className={"text-sm " + (light ? "text-secondary-purple" : "text-primary-gray")}>
 										TCS Leadership
 									</Box>
 								</Box>
@@ -101,11 +119,25 @@ export default function Home() {
 									<Box className={"font-semibold " + (light ? "text-primary-dark" : "text-primary-light")}>
 										Pune Office
 									</Box>
-									<Box className={"text-sm " + (light ? "text-secondary-purple" : "text-secondary-gray")}>
+									<Box className={"text-sm " + (light ? "text-secondary-purple" : "text-primary-gray")}>
 										TCS Pune Office
 									</Box>
 								</Box>
 							</Box>
+						</Box>
+					</Box>
+					<Box>
+						<Box>
+							<Tabs classes={{ indicator: 'bg-secondary-gray', flexContainer: 'justify-around' }} value={tab} onChange={handleChange}>
+								<Tab className={"capitalize text-lg " + ((tab === 0 && light) ? "font-semibold text-primary-dark" : ((tab === 0 && !light) ? "font-semibold text-primary-light" : "text-secondary-gray"))} label="Pune" />
+								<Tab className={"capitalize text-lg " + ((tab === 1 && light) ? "font-semibold text-primary-dark" : ((tab === 1 && !light) ? "font-semibold text-primary-light" : "text-secondary-gray"))} label="Bangalore" />
+							</Tabs>
+							<TabPanel value={tab} index={0}>
+								<Activity location={"pune"} />
+							</TabPanel>
+							<TabPanel value={tab} index={1}>
+								<Activity location={"bangalore"} />
+							</TabPanel>
 						</Box>
 					</Box>
 				</Box>
