@@ -225,3 +225,15 @@ export const Pune = {
 
             Pune famous beautiful gardens and hills like saras Baug, Express Garden, pu la Deshpande Garden (replica of a Japanese garden), kamala Nehru park and hills of Parvati, hanuman tekdi, vetal tekdi and ARAI offers the best view in the city. Pune is famous for museums, historical monuments, worshipping centres, shopping hubs, and the state's best monsoon getaways.`
 };
+
+export const Place = {
+    image: '/place.svg',
+};
+
+export const Food = {
+    image: '/food.svg',
+};
+
+export const Shop = {
+    image: '/shop.svg',
+};

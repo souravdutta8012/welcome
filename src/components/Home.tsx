@@ -3,6 +3,7 @@ import { Box, Tab, Tabs } from "@mui/material";
 import CommonDialog from "./CommonDialog";
 import NameCard from "./NameCard";
 import Video from "./Video";
+import Activity from "./Activity";
 import { useUserState } from "../util/User";
 import { getLight } from "../util/Function";
 
@@ -132,10 +133,10 @@ export default function Home() {
 								<Tab className={"capitalize text-lg " + ((tab === 1 && light) ? "font-semibold text-primary-dark" : ((tab === 1 && !light) ? "font-semibold text-primary-light" : "text-secondary-gray"))} label="Bangalore" />
 							</Tabs>
 							<TabPanel value={tab} index={0}>
-								<Box />
+								<Activity location={"pune"} />
 							</TabPanel>
 							<TabPanel value={tab} index={1}>
-								<Box />
+								<Activity location={"bangalore"} />
 							</TabPanel>
 						</Box>
 					</Box>
