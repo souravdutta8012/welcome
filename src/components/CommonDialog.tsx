@@ -26,6 +26,15 @@ export default function CommonDialog(props: any) {
         return () => window.removeEventListener("resize", handleWindowResize);
     }, []);
 
+    const handleEvent = () => {
+        setopen(false);
+    };
+
+    useEffect(() => {
+        window.addEventListener("popstate", handleEvent);
+        return () => window.removeEventListener("popstate", handleEvent);
+    }, []);
+
     const dialogClose = () => {
         setopen(false);
         navigate('/welcome/home/' + name);

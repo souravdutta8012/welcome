@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import { useNavigate, useParams } from "react-router-dom";
 import { Box, Tab, Tabs } from "@mui/material";
 import CommonDialog from "./CommonDialog";
 import NameCard from "./NameCard";
@@ -17,8 +16,6 @@ export default function Home() {
 
 	const { auth } = useUserState();
 	const light = getLight();
-	const navigate = useNavigate();
-	const { name } = useParams();
 
 	useEffect(() => {
 		const handleWindowResize = () => setHeight(window.innerHeight - 350);
@@ -29,7 +26,6 @@ export default function Home() {
 	const openDialog = (value: any) => {
 		setopen(true);
 		setvalue(value);
-		navigate('/welcome/home/' + value + '/' + name);
 	};
 
 	const TabPanel = (props: any) => {
