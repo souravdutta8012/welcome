@@ -35,7 +35,9 @@ export default function CommonDialog(props: any) {
 
     const dialogClose = () => {
         setopen(false);
-        navigate('/welcome/home/' + name, { replace: true });
+        if (data !== 'leadinfo') {
+            navigate('/welcome/home/' + name, { replace: true });
+        }
     };
 
     return (
