@@ -32,17 +32,6 @@ export default function Home() {
 		navigate('/welcome/home/' + value + '/' + name);
 	};
 
-	const TabPanel = (props: any) => {
-		const { children, value, index } = props;
-		return (
-			<>
-				{value === index && (
-					<Box>{children}</Box>
-				)}
-			</>
-		);
-	};
-
 	const handleChange = (_event: React.SyntheticEvent, newValue: number) => {
 		settab(newValue);
 	};
@@ -131,18 +120,11 @@ export default function Home() {
 						</Box>
 					</Box>
 					<Box>
-						<Box>
-							<Tabs classes={{ indicator: 'bg-secondary-gray', flexContainer: 'justify-around' }} value={tab} onChange={handleChange}>
-								<Tab className={"capitalize text-lg " + ((tab === 0 && light) ? "font-semibold text-primary-dark" : ((tab === 0 && !light) ? "font-semibold text-primary-light" : "text-secondary-gray"))} label="Pune" />
-								<Tab className={"capitalize text-lg " + ((tab === 1 && light) ? "font-semibold text-primary-dark" : ((tab === 1 && !light) ? "font-semibold text-primary-light" : "text-secondary-gray"))} label="Bangalore" />
-							</Tabs>
-							<TabPanel value={tab} index={0}>
-								<Activity location={"pune"} />
-							</TabPanel>
-							<TabPanel value={tab} index={1}>
-								<Activity location={"bangalore"} />
-							</TabPanel>
-						</Box>
+						<Tabs classes={{ indicator: 'bg-secondary-gray', flexContainer: 'justify-around' }} value={tab} onChange={handleChange}>
+							<Tab className={"capitalize text-lg " + ((tab === 0 && light) ? "font-semibold text-primary-dark" : ((tab === 0 && !light) ? "font-semibold text-primary-light" : "text-secondary-gray"))} label="Pune" />
+							<Tab className={"capitalize text-lg " + ((tab === 1 && light) ? "font-semibold text-primary-dark" : ((tab === 1 && !light) ? "font-semibold text-primary-light" : "text-secondary-gray"))} label="Bangalore" />
+						</Tabs>
+						<Activity location={(tab === 0 ? "pune" : "bangalore")} />
 					</Box>
 				</Box>
 			</Box>
