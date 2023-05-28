@@ -13,7 +13,7 @@ export default function Home() {
 	const [value, setvalue] = useState(undefined);
 	const [tab, settab] = useState(0);
 
-	const [height, setHeight] = useState(window.innerHeight - 350);
+	const [height, setHeight] = useState(window.innerHeight - 360);
 
 	const { auth } = useUserState();
 	const light = getLight();
@@ -21,7 +21,7 @@ export default function Home() {
 	const { name } = useParams();
 
 	useEffect(() => {
-		const handleWindowResize = () => setHeight(window.innerHeight - 350);
+		const handleWindowResize = () => setHeight(window.innerHeight - 360);
 		window.addEventListener("resize", handleWindowResize);
 		return () => window.removeEventListener("resize", handleWindowResize);
 	}, []);
