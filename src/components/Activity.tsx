@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useNavigate, useParams } from "react-router-dom";
 import { Avatar, Box } from "@mui/material";
 import CommonDialog from "./CommonDialog";
 import { ExploreData, FoodData, ShopData } from "../Constant";
@@ -9,9 +10,13 @@ export default function Activity(props: any) {
     const [open, setopen] = useState(false);
     const [value, setvalue] = useState(undefined);
 
+    const navigate = useNavigate();
+    const { name } = useParams();
+
     const openDialog = (value: any) => {
         setopen(true);
         setvalue(value);
+        navigate('/welcome/home/' + value + '/' + name);
     };
 
     return (

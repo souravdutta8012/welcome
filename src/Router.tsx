@@ -13,6 +13,7 @@ export const Router = (_props: any) => {
           <Route path="/" element={<Navigate to={"/welcome/" + name} />} />
           <Route path="/welcome/:name?" element={<Welcome />} />
           <Route path="/welcome/home/:name?" element={<Home />} />
+          <Route path="/welcome/home/:dialogtype/:name?" element={<Home />} />
         </Routes>
       </BrowserRouter>
     </>

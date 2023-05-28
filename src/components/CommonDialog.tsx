@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { useNavigate, useParams } from "react-router-dom";
+import { useLocation, useNavigate, useParams } from "react-router-dom";
 import { Dialog } from "@mui/material";
 import { getLight, transition } from "../util/Function";
 import Day from "./Day";
@@ -16,7 +16,8 @@ export default function CommonDialog(props: any) {
 
     const light = getLight();
     const navigate = useNavigate();
-    const { name } = useParams();
+    const { name, dialogtype } = useParams();
+    let location = useLocation();
 
     const [height, setHeight] = useState(window.innerHeight - 125);
 
@@ -26,14 +27,11 @@ export default function CommonDialog(props: any) {
         return () => window.removeEventListener("resize", handleWindowResize);
     }, []);
 
-    const handleEvent = () => {
-        setopen(false);
-    };
-
     useEffect(() => {
-        window.addEventListener("popstate", handleEvent);
-        return () => window.removeEventListener("popstate", handleEvent);
-    }, []);
+        if (!dialogtype) {
+            setopen(false);
+        }
+    }, [location]);
 
     const dialogClose = () => {
         setopen(false);
