@@ -22,7 +22,6 @@ export default function Video() {
                     <video
                         className="rounded-lg"
                         playsInline
-                        loop
                         muted={false}
                         onClick={togglePlay}
                         ref={vidRef}
