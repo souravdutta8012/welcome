@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { useNavigate, useParams } from "react-router-dom";
 import { Dialog } from "@mui/material";
 import { getLight, transition } from "../util/Function";
 import Day from "./Day";
@@ -14,6 +15,8 @@ export default function CommonDialog(props: any) {
     const { open, setopen, data, meta } = props;
 
     const light = getLight();
+    const navigate = useNavigate();
+    const { name } = useParams();
 
     const [height, setHeight] = useState(window.innerHeight - 125);
 
@@ -25,6 +28,7 @@ export default function CommonDialog(props: any) {
 
     const dialogClose = () => {
         setopen(false);
+        navigate('/welcome/home/' + name);
     };
 
     return (
