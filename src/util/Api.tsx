@@ -9,11 +9,12 @@ export const getWeather = async (lat: any, lon: any): Promise<any> => {
     return temp;
 };
 
-export const getCity = async (): Promise<any> => {
+// https://geolocation-db.com/json/
+export const getCity = async (lat: any, lon: any): Promise<any> => {
     let city = null;
-    await axios.get(`https://geolocation-db.com/json/`)
+    await axios.get(`https://api.openweathermap.org/geo/1.0/reverse?lat=${lat}&lon=${lon}&appid=f56f24967aaf51182d1d4df628297c6d`)
         .then((res) => {
-            city = res?.data?.city;
+            city = res?.data[0]?.name;
         });
     return city;
 };

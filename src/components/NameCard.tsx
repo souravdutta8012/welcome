@@ -12,13 +12,14 @@ export default function NameCard(props: any) {
     const [city, setCity] = useState<any>(undefined);
 
     useEffect(() => {
-        getCity().then((res) => {
-            setCity(res);
-        });
+
         if ("geolocation" in navigator) {
             navigator.geolocation.getCurrentPosition((position) => {
                 getWeather(position?.coords?.latitude, position?.coords?.longitude).then((res) => {
                     setTemp(res);
+                });
+                getCity(position?.coords?.latitude, position?.coords?.longitude).then((res) => {
+                    setCity(res);
                 });
             });
         }
