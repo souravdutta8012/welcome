@@ -19,10 +19,10 @@ export const Router = (_props: any) => {
         closeOnClick={false}
         closeButton={false}
         rtl={false}
+        pauseOnHover={false}
         transition={Slide}
         pauseOnFocusLoss
         draggable
-        pauseOnHover
         theme="colored"
         className="font-semibold"
         toastStyle={{ backgroundColor: "#198CE6" }}
