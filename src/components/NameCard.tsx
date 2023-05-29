@@ -1,20 +1,28 @@
 import { useEffect, useState } from "react";
 import { LightMode, DarkMode, Thermostat } from "@mui/icons-material";
 import { Avatar, Box, IconButton } from "@mui/material";
+import { getCity, getWeather } from "../util/Api";
 import { getLight, setTheme } from "../util/Function";
-import { getWeather } from "../util/Api";
 
 export default function NameCard(props: any) {
     const { auth } = props;
     const light = getLight();
 
     const [temp, setTemp] = useState<any>(undefined);
+    const [city, setCity] = useState<any>(undefined);
 
     useEffect(() => {
-        getWeather().then((res) => {
-            setTemp(res);
+        getCity().then((res) => {
+            setCity(res);
         });
-    }, [])
+        if ("geolocation" in navigator) {
+            navigator.geolocation.getCurrentPosition((position) => {
+                getWeather(position?.coords?.latitude, position?.coords?.longitude).then((res) => {
+                    setTemp(res);
+                });
+            });
+        }
+    }, []);
 
     return (
         <>
@@ -27,9 +35,11 @@ export default function NameCard(props: any) {
                         Hi, <span className="font-semibold">{auth?.name}</span>
                     </Box>
                     <Box className="flex justify-between items-center gap-5">
-                        <Box>
-                            <span className="bg-secondary-blue px-2 rounded text-sm font-semibold text-primary-light">PUNE</span>
-                        </Box>
+                        {city ? (
+                            <Box>
+                                <span className="bg-secondary-blue px-2 rounded text-sm font-semibold text-primary-light">{city}</span>
+                            </Box>
+                        ) : null}
                         {temp ? (
                             <Box className="flex flex-row justify-center items-center">
                                 <Box>
