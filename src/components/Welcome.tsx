@@ -2,15 +2,24 @@ import { Avatar, Box, Button, IconButton } from "@mui/material";
 import { DarkMode, LightMode } from "@mui/icons-material";
 import Footer from "./Footer";
 import { useUserState } from "../util/User";
+import { useEffect } from "react";
 import { getLight, setTheme } from "../util/Function";
 import { useNavigate, useParams } from "react-router-dom";
 
 export default function Welcome() {
-
   const { auth } = useUserState();
   const navigate = useNavigate();
   const { name } = useParams();
   const light = getLight();
+
+  useEffect(() => {
+    localStorage.getItem('skipwelcome') === 'true' ? navigate('/welcome/home/' + name) : null;
+  }, []);
+
+  const next = () => {
+    navigate('/welcome/home/' + name);
+    localStorage.setItem('skipwelcome', "true");
+  };
 
   return (
     <>
@@ -49,7 +58,7 @@ export default function Welcome() {
           <Button
             variant="contained"
             className={"w-full h-14 font-semibold text-xl capitalize rounded-lg bg-gradient-to-r " + (light ? "from-secondary-purple to-primary-pink" : "from-secondary-blue to-secondary-purple")} size="large"
-            onClick={() => { navigate('/welcome/home/' + name) }}>
+            onClick={next}>
             Next
           </Button>
         </Box>
