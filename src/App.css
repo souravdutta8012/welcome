@@ -31,6 +31,7 @@
     top: 0px;
     background: #F2F2F2;
     z-index: -10;
+    -webkit-overflow-scrolling: auto !important;
 }
 
 .Grad1 {
@@ -43,6 +44,7 @@
     background: #198CE6;
     opacity: 0.3;
     filter: blur(100px);
+    -webkit-overflow-scrolling: auto !important;
 }
 
 .Grad2 {
@@ -55,4 +57,5 @@
     background: #198CE6;
     opacity: 0.2;
     filter: blur(100px);
+    -webkit-overflow-scrolling: auto !important;
 }
