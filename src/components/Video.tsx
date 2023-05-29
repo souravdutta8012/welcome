@@ -1,17 +1,27 @@
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Card, CardCover } from "@mui/joy";
 
 export default function Video() {
     const vidRef = useRef<any>(null);
-    const [play, setPlay] = useState(true);
+    const [play, setPlay] = useState<any>('unknown');
+
+    useEffect(() => {
+        localStorage.getItem('video') === 'pause' ? setPlay('pause') : setPlay('unknown');
+    }, []);
 
     const togglePlay = () => {
-        if (play) {
+        if (play === 'play') {
             vidRef?.current?.pause();
-            setPlay(false);
+            setPlay('pause');
+            localStorage.setItem('video', 'pause');
+        } else if (play === 'pause') {
+            vidRef?.current?.play();
+            setPlay('play');
+            localStorage.setItem('video', 'play');
         } else {
             vidRef?.current?.play();
-            setPlay(true);
+            setPlay('play');
+            localStorage.setItem('video', 'play');
         }
     };
 
@@ -25,7 +35,7 @@ export default function Video() {
                         muted={false}
                         onClick={togglePlay}
                         ref={vidRef}
-                        autoPlay={true}
+                        autoPlay={(play === 'play' || play === 'unknown')}
                         poster="/video.png">
                         <source
                             src="/video.mp4"
