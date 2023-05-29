@@ -16,7 +16,7 @@ export const Router = (_props: any) => {
         autoClose={2000}
         hideProgressBar={true}
         newestOnTop={false}
-        closeOnClick
+        closeOnClick={false}
         closeButton={false}
         rtl={false}
         transition={Slide}

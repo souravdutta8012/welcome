@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import { Badge, Box } from "@mui/material";
 import { toast } from "react-toastify";
 import { getLight } from "../util/Function";
@@ -5,8 +6,11 @@ import { Day1, Day2 } from "../Constant";
 
 export default function Calendar(props: any) {
     const { dated, setdated, setdateinfo } = props;
-    const dates = [14, 15, 16, 17, 18];
 
+    const [debounce, setDebounce] = useState<any>(false);
+    const [cooldown, setCooldown] = useState(false);
+
+    const dates = [14, 15, 16, 17, 18];
     const light = getLight();
 
     const changeDate = (date: any) => {
@@ -22,6 +26,26 @@ export default function Calendar(props: any) {
             }, 0);
         }
         setdated(date);
+    };
+
+    useEffect(() => {
+        if (debounce) {
+            setCooldown(true);
+            let timeout = setTimeout(() => {
+                setCooldown(false);
+                setDebounce(false);
+            }, 3300);
+            return () => {
+                clearTimeout(timeout);
+            };
+        }
+    }, [debounce]);
+
+    const warn = () => {
+        if (!cooldown) {
+            toast.info('No event on this day !');
+            setDebounce(true);
+        }
     };
 
     return (
@@ -59,7 +83,7 @@ export default function Calendar(props: any) {
                             </>
                         ) : (
                             <>
-                                <div onClick={() => toast.info('No event on this day')}>
+                                <div onClick={warn}>
                                     <Box className="flex flex-col justify-center items-center">
                                         <Box className="text-base font-bold text-secondary-gray">
                                             {d}
