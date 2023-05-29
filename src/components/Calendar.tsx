@@ -1,4 +1,5 @@
 import { Badge, Box } from "@mui/material";
+import { toast } from "react-toastify";
 import { getLight } from "../util/Function";
 import { Day1, Day2 } from "../Constant";
 
@@ -58,14 +59,16 @@ export default function Calendar(props: any) {
                             </>
                         ) : (
                             <>
-                                <Box className="flex flex-col justify-center items-center">
-                                    <Box className="text-base font-bold text-secondary-gray">
-                                        {d}
+                                <div onClick={() => toast.info('No event on this day')}>
+                                    <Box className="flex flex-col justify-center items-center">
+                                        <Box className="text-base font-bold text-secondary-gray">
+                                            {d}
+                                        </Box>
+                                        <Box className="text-sm font-bold text-secondary-gray">
+                                            JUN
+                                        </Box>
                                     </Box>
-                                    <Box className="text-sm font-bold text-secondary-gray">
-                                        JUN
-                                    </Box>
-                                </Box>
+                                </div>
                             </>
                         )}
                     </Box>
