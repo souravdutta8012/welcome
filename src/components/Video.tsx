@@ -20,15 +20,15 @@ export default function Video() {
             <Card className="aspect-video mt-2 mb-6 shadow-none">
                 <CardCover>
                     <video
-                        className="rounded-lg"
+                        className="rounded-lg object-contain"
                         playsInline
                         muted={false}
                         onClick={togglePlay}
                         ref={vidRef}
                         autoPlay={true}
-                        poster="/tcs.jpeg">
+                        poster="/video.png">
                         <source
-                            src="/woodside.mp4"
+                            src="/video.mp4"
                             type="video/mp4" />
                     </video>
                 </CardCover>
