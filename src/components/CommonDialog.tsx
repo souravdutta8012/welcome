@@ -18,10 +18,10 @@ export default function CommonDialog(props: any) {
     const navigate = useNavigate();
     const { name, dialogtype } = useParams();
 
-    const [height, setHeight] = useState(window.innerHeight - 125);
+    const [height, setHeight] = useState(window.innerHeight - 120);
 
     useEffect(() => {
-        const handleWindowResize = () => setHeight(window.innerHeight - 125);
+        const handleWindowResize = () => setHeight(window.innerHeight - 120);
         window.addEventListener("resize", handleWindowResize);
         return () => window.removeEventListener("resize", handleWindowResize);
     }, []);
