@@ -1,45 +1,43 @@
 export const Identities = [
     {
-        name: "Jit Saha",
-        firstname: "Jit",
-        lastname: "Saha",
-        email: "sahajit1996@gmail.com",
-        image: "/favicon.ico"
-    },
-    {
         name: "Sourav Dutta",
         firstname: "Sourav",
         lastname: "Dutta",
         email: "souravdutta2108@gmail.com",
-        image: "/souravdutta.jpeg"
+        image: "/souravdutta.jpeg",
+        video: "/owenmulder.mp4",
     },
     {
         name: "Owen Mulder",
         firstname: "Owen",
         lastname: "Mulder",
         email: "owen.mulder@woodside.com.au",
-        image: "/owenmulder.png"
+        image: "/owenmulder.png",
+        video: "/owenmulder.mp4",
     },
     {
         name: "Daniel Kalms",
         firstname: "Daniel",
         lastname: "Kalms",
         email: "daniel.kalms@woodside.com.au",
-        image: "/danielkalms.png"
+        image: "/danielkalms.png",
+        video: "/danielkalms.mp4",
     },
     {
         name: "Pino Todesco",
         firstname: "Pino",
         lastname: "Todesco",
         email: "pino.todesco@woodside.com.au",
-        image: "/pinotodesco.png"
+        image: "/pinotodesco.png",
+        video: "/pinotodesco.mp4",
     },
     {
         name: "Lotus Chua",
         firstname: "Lotus",
         lastname: "Chua",
         email: "lotus.chua@woodside.com.au",
-        image: "/lotuschua.png"
+        image: "/lotuschua.png",
+        video: "/lotuschua.mp4",
     }
 ];
 

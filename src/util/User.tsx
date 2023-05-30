@@ -94,5 +94,6 @@ const initialUserState: State = {
         email: "",
         name: "",
         image: "",
+        video: "",
     },
 };
