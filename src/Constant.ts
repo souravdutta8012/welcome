@@ -43,53 +43,60 @@ export const Identities = [
 
 export const Day1 = [
     {
-        time: "9:00 AM",
-        title: "Project Update",
+        time: "12:15 PM - 1:00 PM",
+        title: "Airport Departure",
         task: [
-            "Discuss project updates, goals, and challenges.",
-            "Assign tasks and responsibilities for the day.",
-            "Discuss project updates, goals, and challenges."
+            "Welcome to TCS India."
         ]
     },
     {
-        time: "9:30 AM",
-        title: "Project Update",
+        time: "1:00 PM - 1:10 PM",
+        title: "Meet and Greet",
         task: [
-            "Discuss project updates, goals, and challenges.",
-            "Assign tasks and responsibilities for the day.",
-            "Assign tasks and responsibilities for the day."
+            "Meet with Tushar and Anjan."
         ]
     },
     {
-        time: "10:30 AM",
-        title: "Project Update",
+        time: "1:10 PM - 1:40 PM",
+        title: "Travel to JW Marriot",
         task: [
-            "Discuss project updates, goals, and challenges.",
-            "Assign tasks and responsibilities for the day."
+
         ]
     },
     {
-        time: "9:00 AM",
-        title: "Project Update",
+        time: "1:40 PM - 2:15 PM",
+        title: "Hotel Check-In & Fresh-Up",
         task: [
-            "Discuss project updates, goals, and challenges.",
-            "Assign tasks and responsibilities for the day."
+
         ]
     },
     {
-        time: "9:00 AM",
-        title: "Project Update",
+        time: "2:15 PM - 3:00 PM",
+        title: "Lunch with Offshore Team Leads",
         task: [
-            "Discuss project updates, goals, and challenges.",
-            "Assign tasks and responsibilities for the day."
+
         ]
     },
     {
-        time: "9:00 AM",
-        title: "Project Update",
+        time: "3:00 PM - 4:00 PM",
+        title: "Team Lead Interaction and Experience Sharing",
         task: [
-            "Discuss project updates, goals, and challenges.",
-            "Assign tasks and responsibilities for the day."
+            "Discuss about offshore delivery from each track, their experience, journey.",
+            "Submit the best 15 ideathon to them to evaluate and share thoughts."
+        ]
+    },
+    {
+        time: "4:00 PM - 6:00 PM",
+        title: "Relax",
+        task: [
+
+        ]
+    },
+    {
+        time: "6:00 PM - 8:30 PM",
+        title: "Drinks & Dinner",
+        task: [
+
         ]
     }
 ];
