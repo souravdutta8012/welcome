@@ -199,7 +199,7 @@ export const Leads = [
     },
     {
         name: "Saptarshi Dasgupta",
-        tag: "Business Head, Energy, Resources Healthcare & Lifescience - ANZ",
+        tag: "Business Head, Energy & Resources, Healthcare & Lifescience - Australia & New Zealand",
         linkedin: "https://www.linkedin.com/in/saptarshi-dasgupta-9009092b/",
         about: `Business Head at TCS, Played a wide variety of leadership roles in past 10 years in Energy and Natural Resources Domain (Mining, Oil & Gas, EPC and Metals), including P&L management of Energy and Natural Resources segment for TCS ANZ, account management of an upstream Oil & Gas customer in Australia, a Global Metal & Mining customer and a Global diversified Miner. Provided delivery leadership to successfully execute multiple digital transformation programs for global customers in the areas of supply chain, finance, asset management, HR etc, leveraging technologies like Cloud, Data and Analytics and ERP, IoT etc.`,
         image: "/saptarshidasgupta.svg"
@@ -256,37 +256,37 @@ export const Leads = [
     {
         name: "Ashok Pai",
         tag: "​Senior Vice President & CBO",
-        linkedin: "",
+        linkedin: "https://www.linkedin.com/in/ashokpai1969/",
         about: `Senior Vice President at TCS and heads Cognitive Business Operations (CBO) and Digital Transformation Services for New Growth Markets. He leads efforts to reimagine business operations into a strategic differentiator through automation, analytics, contextual insights, and cutting-edge IT infrastructure. He has over 25 years of industry experience, He played multiple leadership roles across geographies and has a strong global perspective, understanding of different cultures and business practices.`,
-        image: "/"
+        image: "/ashokpai.svg"
     },
     {
         name: "Sacheen Ratnaparkhi",
         tag: "Vice president & Center Head",
-        linkedin: "​",
+        linkedin: "https://www.linkedin.com/in/sacheen-ratnaparkhi-7586336/​",
         about: `Vice president and center head in TCS Pune. He has over 15+ years of industry experience.`,
-        image: "/"
+        image: "/sacheenratnaparkhi.svg"
     },
     {
-        name: "Santha Subamoni",
+        name: "Santha Subramoni",
         tag: "Global Head of Cyber Security",
-        linkedin: "",
+        linkedin: "https://www.linkedin.com/in/santha-subramoni-625255a/",
         about: `Global head of Cyber Security in TCS. She has over 25 years of industry experience. Her Specialties are Cyber defense technologies and practices, managed security services , cognitive technologies, automation , business transformation. `,
-        image: "/"
+        image: "/santhasubramoni.svg"
     },
     {
         name: "Siva Ganesan",
         tag: "Microsoft Business Unit",
-        linkedin: "",
+        linkedin: "https://www.linkedin.com/in/sivaganesantcs/",
         about: `Microsoft Business Unit in TCS and deliver people powered , Tech primed and sustainable scaled high business growth.​ He has good industry experience.​`,
-        image: "/"
+        image: "/sivaganesan.svg"
     },
     {
         name: "Ajay Nandgaonkar",
-        tag: "Chief Technology Office - Energy and resources",
-        linkedin: "",
+        tag: "Chief Technology Office - Energy and Resources",
+        linkedin: "https://www.linkedin.com/in/ajay-nandgaonkar-243ab68/",
         about: `Chief technology officer - Energy and Resources in TCS. He has 10+ years industry experience. He is Physicist by training with experience in building strong client relationships, managing qualified teams in diverse business areas such as modeling & simulation, high performance computing, medical device design and design strategy.​`,
-        image: "/"
+        image: "/ajaynandgaonkar.svg"
     }
 ];
 

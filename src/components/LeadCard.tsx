@@ -36,18 +36,18 @@ export default function LeadCard(props: any) {
                             </a>
                         </Box>
                     </Box>
-                    <Box className="flex justify-between items-center gap-2">
-                        <Box className={"text-sm " + (light ? "text-primary-dark" : "text-primary-light")}>
-                            {data?.tag}
-                        </Box>
-                        {more ? (
-                            <div onClick={() => openDialog('leadinfo', data)}>
+                    <div onClick={() => openDialog('leadinfo', data)}>
+                        <Box className="flex justify-between items-center gap-2">
+                            <Box className={"text-sm " + (light ? "text-primary-dark" : "text-primary-light")}>
+                                {data?.tag}
+                            </Box>
+                            {more ? (
                                 <Box className={" " + (light ? "text-primary-dark" : "text-primary-light")}>
                                     <ReadMore className="text-3xl" />
                                 </Box>
-                            </div>
-                        ) : null}
-                    </Box>
+                            ) : null}
+                        </Box>
+                    </div>
                 </Box>
             </Box>
             <CommonDialog open={open} setopen={setopen} data={value} meta={meta} />
