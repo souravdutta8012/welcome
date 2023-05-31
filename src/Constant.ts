@@ -252,6 +252,41 @@ export const Leads = [
         linkedin: "https://www.linkedin.com/in/mrityunjoy-ghosh-93b66b1aa/",
         about: ``,
         image: "/mrityunjoyghosh.svg"
+    },
+    {
+        name: "Ashok Pai",
+        tag: "​Senior Vice President & CBO",
+        linkedin: "",
+        about: `Senior Vice President at TCS and heads Cognitive Business Operations (CBO) and Digital Transformation Services for New Growth Markets. He leads efforts to reimagine business operations into a strategic differentiator through automation, analytics, contextual insights, and cutting-edge IT infrastructure. He has over 25 years of industry experience, He played multiple leadership roles across geographies and has a strong global perspective, understanding of different cultures and business practices.`,
+        image: "/"
+    },
+    {
+        name: "Sacheen Ratnaparkhi",
+        tag: "Vice president & Center Head",
+        linkedin: "​",
+        about: `Vice president and center head in TCS Pune. He has over 15+ years of industry experience.`,
+        image: "/"
+    },
+    {
+        name: "Santha Subamoni",
+        tag: "Global Head of Cyber Security",
+        linkedin: "",
+        about: `Global head of Cyber Security in TCS. She has over 25 years of industry experience. Her Specialties are Cyber defense technologies and practices, managed security services , cognitive technologies, automation , business transformation. `,
+        image: "/"
+    },
+    {
+        name: "Siva Ganesan",
+        tag: "Microsoft Business Unit",
+        linkedin: "",
+        about: `Microsoft Business Unit in TCS and deliver people powered , Tech primed and sustainable scaled high business growth.​ He has good industry experience.​`,
+        image: "/"
+    },
+    {
+        name: "Ajay Nandgaonkar",
+        tag: "Chief Technology Office - Energy and resources",
+        linkedin: "",
+        about: `Chief technology officer - Energy and Resources in TCS. He has 10+ years industry experience. He is Physicist by training with experience in building strong client relationships, managing qualified teams in diverse business areas such as modeling & simulation, high performance computing, medical device design and design strategy.​`,
+        image: "/"
     }
 ];
 
