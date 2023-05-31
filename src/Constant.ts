@@ -103,49 +103,88 @@ export const Day1 = [
 
 export const Day2 = [
     {
-        time: "9:30 AM",
-        title: "Project Update",
+        time: "7:45 AM - 8:30 AM",
+        title: "Travel to TCS Office from JW Marriot",
         task: [
-            "Discuss project updates, goals, and challenges.",
-            "Review any pending issues or concerns."
+
         ]
     },
     {
-        time: "10:00 AM",
-        title: "Project Update",
+        time: "8:30 AM - 9:00 AM",
+        title: "Warm Reception",
         task: [
-            "Discuss project updates, goals, and challenges.",
+            "Warm welcome in maharastrian style.",
+            "Security check-in.",
+            "Safety briefing."
         ]
     },
     {
-        time: "11:00 AM",
-        title: "Project Update",
+        time: "9:00 AM - 9:45 AM",
+        title: "Welcome Introduction & Agenda Overview ",
         task: [
-            "Assign tasks and responsibilities for the day."
+            "8 years relationship in 8 min.",
+            "Whom they would be meeting today and what role they play.",
+            "Onboarding & retention process through learning."
         ]
     },
     {
-        time: "9:00 AM",
-        title: "Project Update",
+        time: "9:45 AM - 10:15 AM",
+        title: "TCS Sahyadri Park Walk & Talk to reach Woodside ODC",
         task: [
-            "Discuss project updates, goals, and challenges.",
-            "Assign tasks and responsibilities for the day."
+            "Glance through the various key & large odcs which are engaged from pune."
         ]
     },
     {
-        time: "9:00 AM",
-        title: "Project Update",
+        time: "10:15 AM - 12:00 PM",
+        title: "ODC S1 & S2 Visit",
         task: [
-            "Discuss project updates, goals, and challenges.",
-            "Assign tasks and responsibilities for the day."
+            "ODC cubicle competition in indian culture.",
+            "Overview of services.",
+            "Meet the team members through the lens of the team leads."
         ]
     },
     {
-        time: "9:00 AM",
-        title: "Project Update",
+        time: "12:00 PM - 12:30 PM",
+        title: "Agile Innovation Cloud",
         task: [
-            "Discuss project updates, goals, and challenges.",
-            "Assign tasks and responsibilities for the day."
+
+        ]
+    },
+    {
+        time: "12:30 PM - 1:00 PM",
+        title: "Colloborative Innovation",
+        task: [
+            "AWS based innovation as highlighted by deepak."
+        ]
+    },
+    {
+        time: "1:00 PM - 2:00 PM",
+        title: "Lunch",
+        task: [
+
+        ]
+    },
+    {
+        time: "2:00 PM - 3:15 PM",
+        title: "Townhall",
+        task: [
+            "Townhall meet.",
+            "Reward & recognition.",
+            "Cultural event."
+        ]
+    },
+    {
+        time: "3:15 PM - 3:30 PM",
+        title: "Wrap-up",
+        task: [
+
+        ]
+    },
+    {
+        time: "3:30 PM - 4:45 PM",
+        title: "Travel to Airport",
+        task: [
+
         ]
     }
 ];
