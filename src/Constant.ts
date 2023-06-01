@@ -290,19 +290,15 @@ export const Leads = [
     }
 ];
 
-export const Pune = {
-    map: "https://goo.gl/maps/nci2ZWG7fevgwGuD9?coh=178571&entry=tt",
-    about: `Pune is a metropolitan city in Maharashtra. It is the 8th most populous city in India. In the 16th century, Pune became an important part of the Maratha, Mughal, and the Peshwa dynasty. The Great Maratha ruler Chhatrapati Shivaji Maharaj was born at Shivneri fort, which is not very far from Pune.
+export const OfficeData = {
+    name: "TCS Sahyadri Park",
+    details: `TCS Sahyadri Park campus is the biggest in Pune, developed over 50 acres of land. It has got three buildings named S1, S2 and S3. S1 building is called Poorna, S2 building is called Torna while S3 building is called Tikona. At the main gate entrance, building's name is A1 called Raj gad.
 
-            The city is nicknamed as IT capital of India, Cultural capital of Maharashtra, Oxford of the East, the queen of Deccan and the cycle city of India. Pune city is a confluence of Mula and Mutha river and flooded by Pavana, Indrayani and Bhima River. Pune has seen a rapid growth of industrialization and urbanization over the years. The core area has 17 paths, which houses a number of old buildings and gives an insight into the old city life. Pune has a pleasant temperature all around the year except for the month of May. There is moderate rainfall in the monsoon and the winters here are very mild.
-
-            Pune is ranked highest in terms of living index. India's first girl's school was started in Pune by Savitribai Phule, which is also the name given to the Pune University. The Majority of the Pune crowd includes the Youngsters due to prominent number of best educational institutes.
-
-            Pune has contributed a lot in literature, art, theatre, films, folklore, music, performing art etc.., there are several cultural fests and festivals organised in Pune, the most popular one is the Sawai Gandharva sangeet Mahotsav (biggest classical music fest) followed by the international film festival, Pune literature fest, etc.
-
-            One must not miss the Ganapati festival in Pune as it takes place on a very large scale with an energetic music of Dhol and Tashaa, huge decorations, and a very enthusiastic and energetic participation of Punekars.
-
-            Pune famous beautiful gardens and hills like saras Baug, Express Garden, pu la Deshpande Garden (replica of a Japanese garden), kamala Nehru park and hills of Parvati, hanuman tekdi, vetal tekdi and ARAI offers the best view in the city. Pune is famous for museums, historical monuments, worshipping centres, shopping hubs, and the state's best monsoon getaways.`
+    It is having peaceful library with beautiful view and having good collection of books. The surroundings inside the campus are refreshing with greenery and a huge chess game to play at. The layout at Sahyadri Park is eco-friendly and conducive to creating a good working environment.
+    
+    In terms of facility it has indoor playground, volleyball ground, tennis and badminton courts. There are two big canteens having two, really good and very hygienic and has Amul parlours and subway.`,
+    map: "https://goo.gl/maps/GEtF9NiWmRXkngPu9?coh=178571&entry=tt",
+    image: '/tcssahyadripark.svg'
 };
 
 export const ExploreData = {
