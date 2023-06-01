@@ -2,17 +2,15 @@ import { useEffect, useState } from "react";
 import { LightMode, DarkMode, Thermostat } from "@mui/icons-material";
 import { Avatar, Box, IconButton } from "@mui/material";
 import { getCity, getWeather } from "../util/Api";
-import { getLight, setTheme } from "../util/Function";
+import { setTheme } from "../util/Function";
 
 export default function NameCard(props: any) {
     const { auth } = props;
-    const light = getLight();
 
     const [temp, setTemp] = useState<any>(undefined);
     const [city, setCity] = useState<any>(undefined);
 
     useEffect(() => {
-
         if ("geolocation" in navigator) {
             navigator.geolocation.getCurrentPosition((position) => {
                 getWeather(position?.coords?.latitude, position?.coords?.longitude).then((res) => {
@@ -31,7 +29,7 @@ export default function NameCard(props: any) {
                 <Box>
                     <Avatar alt="Remy Sharp" src={auth.image} className="w-20 h-20 border border-primary-dark" />
                 </Box>
-                <Box className={"flex flex-col gap-1 " + (light ? "text-primary-dark" : "text-primary-light")}>
+                <Box className="flex flex-col gap-1 text-primary-dark dark:text-primary-light">
                     <Box className="text-xl">
                         Hi, <span className="font-semibold">{auth?.name}</span>
                     </Box>
@@ -54,15 +52,12 @@ export default function NameCard(props: any) {
                     </Box>
                 </Box>
                 <Box className="flex justify-center items-center">
-                    {light ? (
-                        <IconButton size="small" onClick={() => setTheme("dark")}>
-                            <LightMode className="text-3xl text-primary-dark" />
-                        </IconButton>
-                    ) : (
-                        <IconButton size="small" onClick={() => setTheme("light")}>
-                            <DarkMode className="text-3xl text-primary-light" />
-                        </IconButton>
-                    )}
+                    <IconButton size="small" className="block dark:hidden" onClick={() => setTheme("dark")}>
+                        <LightMode className="text-3xl text-primary-dark" />
+                    </IconButton>
+                    <IconButton size="small" className="hidden dark:block" onClick={() => setTheme("light")}>
+                        <DarkMode className="text-3xl text-primary-light" />
+                    </IconButton>
                 </Box>
             </Box>
         </>

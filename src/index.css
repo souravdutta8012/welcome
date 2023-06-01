@@ -12,3 +12,50 @@ body {
 code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
+
+@layer components {
+    .Backdrop {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0px;
+        background: #1E2323;
+        z-index: -10;
+    }
+
+    .Backdrop-light {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0px;
+        background: #F2F2F2;
+        z-index: -10;
+        -webkit-overflow-scrolling: auto !important;
+    }
+
+    .Grad1 {
+        position: absolute;
+        top: -120px;
+        left: -105px;
+        z-index: -9;
+        height: 338px;
+        width: 338px;
+        background: #198CE6;
+        opacity: 0.3;
+        filter: blur(100px);
+        -webkit-overflow-scrolling: auto !important;
+    }
+
+    .Grad2 {
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+        z-index: -9;
+        height: 338px;
+        width: 338px;
+        background: #198CE6;
+        opacity: 0.2;
+        filter: blur(100px);
+        -webkit-overflow-scrolling: auto !important;
+    }
+}

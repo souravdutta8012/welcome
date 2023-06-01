@@ -57,6 +57,9 @@ export const UserProvider = ({ children }: Props) => {
             dispatch({ type: "setUserAuth", payload: { auth: auth } });
 
             let light = getLight();
+            const root: HTMLElement = window.document.documentElement;
+            root.removeAttribute("class");
+            root.classList.add(light ? "light" : "dark");
             localStorage.setItem("theme", light ? "light" : "dark");
         }
         getUser();

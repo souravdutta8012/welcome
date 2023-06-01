@@ -1,13 +1,10 @@
 import { useState, useEffect } from "react";
 import { Box, Button } from "@mui/material";
 import { LocationOn } from "@mui/icons-material";
-import { getLight } from "../util/Function";
 import { OfficeData } from "../Constant";
 
 export default function Office() {
     const [height, setHeight] = useState(window.innerHeight - 360);
-
-    const light = getLight();
 
     useEffect(() => {
         const handleWindowResize = () => setHeight(window.innerHeight - 360);
@@ -19,7 +16,7 @@ export default function Office() {
         <>
             <Box className="px-6">
                 <Box className="flex flex-col gap-4 pt-10">
-                    <Box className={"text-2xl font-semibold " + (light ? "text-secondary-purple" : "text-primary-light")}>
+                    <Box className="text-2xl font-semibold text-secondary-purple dark:text-primary-light">
                         {OfficeData?.name}
                     </Box>
                     <Box>
@@ -38,7 +35,7 @@ export default function Office() {
                         </Box>
                     </Box>
                     <Box className="overflow-y-auto" sx={{ maxHeight: height }}>
-                        <Box className={"pb-24 whitespace-pre-line " + (light ? "text-primary-dark" : "text-primary-gray")}>
+                        <Box className="pb-24 whitespace-pre-line text-primary-dark dark:text-primary-gray">
                             {OfficeData?.details}
                         </Box>
                     </Box>

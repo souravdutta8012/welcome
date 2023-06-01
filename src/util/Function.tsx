@@ -11,8 +11,10 @@ export const getLight = () => {
 };
 
 export const setTheme = (value: string) => {
+    const root: HTMLElement = window.document.documentElement;
+    root.removeAttribute("class");
+    root.classList.add(value);
     localStorage.setItem('theme', value);
-    window.location.reload();
 };
 
 export const transition = forwardRef(function Transition(

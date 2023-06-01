@@ -1,16 +1,15 @@
+import { useEffect } from "react";
+import { useNavigate, useParams } from "react-router-dom";
 import { Avatar, Box, Button, IconButton } from "@mui/material";
 import { DarkMode, LightMode } from "@mui/icons-material";
 import Footer from "./Footer";
 import { useUserState } from "../util/User";
-import { useEffect } from "react";
-import { getLight, setTheme } from "../util/Function";
-import { useNavigate, useParams } from "react-router-dom";
+import { setTheme } from "../util/Function";
 
 export default function Welcome() {
   const { auth } = useUserState();
   const navigate = useNavigate();
   const { name } = useParams();
-  const light = getLight();
 
   useEffect(() => {
     localStorage.getItem('skipwelcome') === 'true' ? navigate('/welcome/home/' + name) : null;
@@ -23,7 +22,7 @@ export default function Welcome() {
 
   return (
     <>
-      <Box className={light ? "Backdrop-light" : "Backdrop"}></Box>
+      <Box className="Backdrop-light dark:Backdrop"></Box>
       <Box className="Grad1"></Box>
       <Box className="Grad2 overflow-clip"></Box>
       <Box className="flex flex-col justify-center items-center text-center gap-10 pt-14">
@@ -31,33 +30,28 @@ export default function Welcome() {
           <Avatar alt="Remy Sharp" src={auth.image} className="w-36 h-36" />
         </Box>
         <Box className="flex flex-col justify-center items-center text-center gap-1">
-          <Box className={"text-3xl font-semibold " + (light ? "text-primary-dark" : "text-primary-light")}>
+          <Box className="text-3xl font-semibold text-primary-dark dark:text-primary-light">
             {auth.name}
           </Box>
-          <Box className={"text-xl font-normal " + (light ? "text-primary-dark" : "text-primary-light")}>welcome to</Box>
-          <Box className={"text-5xl font-bold " + (light ? "text-primary-dark" : "text-primary-light")}>India</Box>
+          <Box className="text-xl font-normal text-primary-dark dark:text-primary-light">welcome to</Box>
+          <Box className="text-5xl font-bold text-primary-dark dark:text-primary-light">India</Box>
         </Box>
       </Box>
       <Box className="absolute bottom-0 w-full px-6">
         <Box className="flex justify-center items-center py-16">
-          {light ? (
-            <Box className=" border-2 border-primary-dark p-2 rounded-lg">
-              <IconButton size="small" onClick={() => setTheme("dark")}>
-                <LightMode className="text-3xl text-primary-dark" />
-              </IconButton>
-            </Box>
-          ) : (
-            <Box className="border-2 border-primary-light p-2 rounded-lg">
-              <IconButton size="small" onClick={() => setTheme("light")}>
-                <DarkMode className="text-3xl text-primary-light" />
-              </IconButton>
-            </Box>
-          )}
+          <Box className="border-2 border-primary-dark dark:border-primary-light p-2 rounded-lg">
+            <IconButton size="small" className="block dark:hidden" onClick={() => setTheme("dark")}>
+              <LightMode className="text-3xl text-primary-dark" />
+            </IconButton>
+            <IconButton size="small" className="hidden dark:block" onClick={() => setTheme("light")}>
+              <DarkMode className="text-3xl text-primary-light" />
+            </IconButton>
+          </Box>
         </Box>
         <Box className="flex flex-col justify-center items-center">
           <Button
             variant="contained"
-            className={"w-full h-14 font-semibold text-xl capitalize rounded-lg bg-gradient-to-r " + (light ? "from-secondary-purple to-primary-pink" : "from-secondary-blue to-secondary-purple")} size="large"
+            className="w-full h-14 font-semibold text-xl capitalize rounded-lg bg-gradient-to-r from-secondary-purple to-primary-pink dark:from-secondary-blue dark:to-secondary-purple" size="large"
             onClick={next}>
             Next
           </Button>

@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import { Dialog } from "@mui/material";
-import { getLight, transition } from "../util/Function";
+import { transition } from "../util/Function";
 import Day from "./Day";
 import Lead from "./Lead";
 import LeadDetails from "./LeadDetails";
@@ -14,7 +14,6 @@ import Back from "./Back";
 export default function CommonDialog(props: any) {
     const { open, setopen, data, meta } = props;
 
-    const light = getLight();
     const navigate = useNavigate();
     const { name, dialogtype } = useParams();
 
@@ -49,14 +48,14 @@ export default function CommonDialog(props: any) {
                 fullScreen
                 TransitionComponent={transition}
                 hideBackdrop
+                classes={{ paper: 'bg-primary-light dark:bg-primary-dark' }}
                 PaperProps={{
                     sx: {
                         maxHeight: height,
                         position: 'absolute',
                         bottom: 0,
-                        borderRadius: '20px 20px 0 0',
-                        backgroundColor: `${(light ? "#F2F2F2" : "#1E2323")}`
-                    }
+                        borderRadius: '20px 20px 0 0'
+                    },
                 }}
             >
                 {data === 'day1' ? (

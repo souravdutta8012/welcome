@@ -1,16 +1,13 @@
 import { Box, Button } from "@mui/material";
 import { LocationOn } from "@mui/icons-material";
-import { getLight } from "../util/Function";
 
 export default function ActivityCard(props: any) {
     const { data } = props;
 
-    const light = getLight();
-
     return (
         <>
             <Box className="flex flex-col gap-2 py-6">
-                <Box className={"text-2xl font-semibold " + (light ? "text-secondary-purple" : "text-primary-light")}>
+                <Box className="text-2xl font-semibold text-secondary-purple dark:text-primary-light">
                     {data?.name}
                 </Box>
                 <Box>
@@ -28,7 +25,7 @@ export default function ActivityCard(props: any) {
                         ) : null}
                     </Box>
                 </Box>
-                <Box className={"" + (light ? "text-primary-dark" : "text-primary-gray")}>
+                <Box className="text-primary-dark dark:text-primary-gray">
                     {data?.details}
                 </Box>
             </Box >

@@ -2,12 +2,9 @@ import { useState } from "react";
 import { Avatar, Box } from "@mui/material";
 import { LinkedIn, ReadMore } from "@mui/icons-material";
 import CommonDialog from "./CommonDialog";
-import { getLight } from "../util/Function";
 
 export default function LeadCard(props: any) {
     const { data, more } = props;
-
-    const light = getLight();
 
     const [open, setopen] = useState(false);
     const [value, setvalue] = useState(undefined);
@@ -27,7 +24,7 @@ export default function LeadCard(props: any) {
                 </Box>
                 <Box className="flex flex-col gap-4 grow">
                     <Box className="flex justify-between items-center gap-2">
-                        <Box className={"text-lg font-semibold " + (light ? "text-secondary-purple" : "text-primary-light")}>
+                        <Box className="text-lg font-semibold text-secondary-purple dark:text-primary-light">
                             {data?.name}
                         </Box>
                         <Box className="text-secondary-blue">
@@ -38,11 +35,11 @@ export default function LeadCard(props: any) {
                     </Box>
                     <div onClick={() => openDialog('leadinfo', data)}>
                         <Box className="flex justify-between items-center gap-2">
-                            <Box className={"text-sm " + (light ? "text-primary-dark" : "text-primary-light")}>
+                            <Box className="text-sm text-primary-dark dark:text-primary-light">
                                 {data?.tag}
                             </Box>
                             {more ? (
-                                <Box className={" " + (light ? "text-primary-dark" : "text-primary-light")}>
+                                <Box className="text-primary-dark dark:text-primary-light">
                                     <ReadMore className="text-3xl" />
                                 </Box>
                             ) : null}
