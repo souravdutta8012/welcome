@@ -343,10 +343,40 @@ export const ExploreData = {
     ],
     bangalore: [
         {
-            name: '',
-            details: '',
-            map: '',
-            image: '/.svg'
+            name: "Tipu Sultan's Summer Palace",
+            details: "This elegant palace was the summer residence of Tipu Sultan, a ruler of the Kingdom of Mysore. It exhibits Indo-Islamic architecture and houses a museum that displays artifacts and memorabilia from Tipu Sultan's era.",
+            map: "https://www.google.com/maps/place/Tipu+Sultan's+Summer+Palace/@12.9593565,77.5710666,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae15e4b434e601:0x1a69fbe395219f75!8m2!3d12.9593513!4d77.5736415!16s%2Fm%2F06wb67f?entry=ttu",
+            image: "/shaniwarwada.svg"
+        },
+        {
+            name: "Nandi Hills",
+            details: "Located around 60 kilometres from Bengaluru, Nandi Hills is a popular weekend getaway and a favourite spot for nature lovers. It offers breathtaking views, pleasant weather, and activities like hiking, cycling, and paragliding. The ancient hilltop Nandi Temple is also a significant attraction.",
+            map: "https://www.google.com/maps/place/Nandi+Hills,+Karnataka/@13.3829702,77.6278172,13z/data=!3m1!4b1!4m6!3m5!1s0x3bb1e445ebfcea17:0x1639f72959196608!8m2!3d13.370154!4d77.6834551!16zL20vMDloMDFo?entry=ttu",
+            image: "/shaniwarwada.svg"
+        },
+        {
+            name: "Bangalore Palace",
+            details: "Modelled after the Windsor Castle in England, Bangalore Palace is a magnificent structure that showcases Tudor-style architecture. The palace offers guided tours, and visitors can explore its opulent interiors, vintage furniture, and extensive grounds.",
+            map: "https://www.google.com/maps/place/Bengaluru+Palace/@13.003512,77.5865204,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae1649294a5637:0xb1f8b77e331512cf!8m2!3d13.0035068!4d77.5890953!16s%2Fm%2F02pf96d?entry=ttu",
+            image: "/shaniwarwada.svg"
+        },
+        {
+            name: "Ulsoor Lake",
+            details: "Ulsoor Lake is one of the largest lakes in Bengaluru and a great place to relax and unwind. It offers boating facilities and scenic surroundings. The lake is also home to the popular Someshwar Temple, known for its intricate carvings.",
+            map: "https://www.google.com/maps/place/Ulsoor+Lake/@12.9824737,77.6141705,16z/data=!3m1!4b1!4m6!3m5!1s0x3bae16902ac7025b:0x5cda8d215b70772c!8m2!3d12.9832468!4d77.6199608!16s%2Fg%2F11dxb363mv?entry=ttu",
+            image: "/shaniwarwada.svg"
+        },
+        {
+            name: "ISKCON Temple",
+            details: "The ISKCON Temple in Bengaluru is dedicated to Lord Krishna and is one of the largest ISKCON temples in the world. It features a beautiful architecture, serene atmosphere, and hosts various spiritual and cultural events.",
+            map: "https://www.google.com/maps/place/ISKCON+Temple,+Bangalore/@13.009838,77.5485215,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae3ded0b360e07:0x7a7fb24a41a6b2b3!8m2!3d13.0098328!4d77.5510964!16s%2Fm%2F0g9x5qd?entry=ttu",
+            image: "/shaniwarwada.svg"
+        },
+        {
+            name: "Cubbon Park",
+            details: "Spread over 300 acres, Cubbon Park is a lush green oasis in the heart of Bengaluru. It features beautiful, landscaped gardens, jogging tracks, a library, and several government buildings. The park is ideal for leisurely walks, picnics, and outdoor activities.",
+            map: "https://www.google.com/maps/place/Cubbon+Park/@12.9779343,77.59258,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae1673e7d0672f:0xc62ca5a6e943dfb8!8m2!3d12.9779291!4d77.5951549!16zL20vMGJtN2Q1?entry=ttu",
+            image: "/shaniwarwada.svg"
         }
     ]
 };
@@ -397,9 +427,44 @@ export const FoodData = {
     ],
     bangalore: [
         {
-            name: '',
-            details: '',
-            image: '/.svg'
+            name: "MTR (Mavalli Tiffin Room)",
+            details: "MTR is an iconic restaurant in Bengaluru known for its delicious South Indian vegetarian fare. It has been serving traditional dishes like idli, dosa, and kesari bath since 1924.",
+            image: "/misalpav.svg"
+        },
+        {
+            name: "Koshy's",
+            details: "Karavalli is a renowned restaurant at The Gateway Hotel that specializes in coastal and regional cuisine from the southern states of India. It offers an extensive menu of traditional dishes made with authentic flavours and ingredients.",
+            image: "/misalpav.svg"
+        },
+        {
+            name: "Karavalli",
+            details: "Karavalli is a renowned restaurant at The Gateway Hotel that specializes in coastal and regional cuisine from the southern states of India. It offers an extensive menu of traditional dishes made with authentic flavours and ingredients.",
+            image: "/misalpav.svg"
+        },
+        {
+            name: "Vidyarthi Bhavan",
+            details: "Vidyarthi Bhavan is a famous eatery in Bengaluru that specializes in serving crispy and fluffy dosas. It has been around since 1943 and is a favourite spot for dosa lovers.",
+            image: "/misalpav.svg"
+        },
+        {
+            name: "Brahmin's Coffee Bar",
+            details: "This humble eatery is known for its filter coffee and delicious breakfast items like idli, Vada, and kesari bath. Located in Shankar Puram, it has been serving patrons since 1965.",
+            image: "/misalpav.svg"
+        },
+        {
+            name: "Toit",
+            details: "Toit is a well-known microbrewery and gastropub in Bengaluru. It offers a range of craft beers and a diverse menu that includes wood-fired pizzas, burgers, and other pub-style dishes.",
+            image: "/misalpav.svg"
+        },
+        {
+            name: "Arbor Brewing Company",
+            details: "Arbor Brewing Company (ABC) is a popular microbrewery and pub located in Bengaluru. It is part of the Arbor Brewing Company chain, which originated in Ann Arbor, Michigan, USA.",
+            image: "/misalpav.svg"
+        },
+        {
+            name: "Third Wave Coffee Roasters",
+            details: "Third Wave Coffee Roasters is a popular specialty coffee chain in Bengaluru. Known for its focus on high-quality coffee and a meticulous approach to brewing, Third Wave Coffee Roasters has gained a reputation among coffee enthusiasts.",
+            image: "/misalpav.svg"
         }
     ]
 };
@@ -434,10 +499,34 @@ export const ShopData = {
     ],
     bangalore: [
         {
-            name: '',
-            details: '',
-            map: '',
-            image: '/.svg'
+            name: "Commercial Street",
+            details: "Located in the heart of the city, Commercial Street is a bustling shopping destination known for its vibrant atmosphere and a wide range of merchandise. It offers everything from clothing, footwear, accessories, and home decor to electronics and fabrics.",
+            map: "https://www.google.com/maps/place/Commercial+Street,+Tasker+Town,+Shivaji+Nagar,+Bengaluru,+Karnataka+560001/@12.9821947,77.6057736,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae1689d24ec16d:0xb95d15d2169a107d!8m2!3d12.9821895!4d77.6083485!16s%2Fg%2F11bxfz11gp?entry=ttu",
+            image: "/junabazar.svg"
+        },
+        {
+            name: "MG Road",
+            details: "Mahatma Gandhi Road, commonly known as MG Road, is one of Bengaluru's major commercial hubs. It features several shopping centres, including Garuda Mall and Eva Mall, where you can find branded stores, boutiques, and a variety of retail outlets.",
+            map: "https://www.google.com/maps/search/mg+road+shopping/@12.9747139,77.6068731,17z/data=!3m1!4b1?entry=ttu",
+            image: "/junabazar.svg"
+        },
+        {
+            name: "Brigade Road",
+            details: "Brigade Road is a vibrant shopping street adjacent to MG Road. It is known for its trendy fashion stores, footwear shops, and accessory boutiques. The street is also lined with cafes, restaurants, and entertainment options.",
+            map: "https://www.google.com/maps/place/Brigade+Rd,+Shanthala+Nagar,+Ashok+Nagar,+Bengaluru,+Karnataka/@12.9709961,77.6043247,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae15d55cf36715:0x67c9c68d327b80dd!8m2!3d12.9709909!4d77.6068996!16s%2Fm%2F03nsqmb?entry=ttu",
+            image: "/junabazar.svg"
+        },
+        {
+            name: "UB City",
+            details: "UB City is a luxurious high-end shopping complex located in the central business district of Bengaluru. It houses a range of international luxury brands, designer boutiques, and upscale restaurants. It's a great place for luxury shopping and indulgence.",
+            map: "https://www.google.com/maps/place/UB+City/@12.9716428,77.5959367,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae16775069abf7:0xe138768bb2a0df8a!8m2!3d12.9716428!4d77.5959367!16s%2Fm%2F047skbt?entry=ttu",
+            image: "/junabazar.svg"
+        },
+        {
+            name: "Chickpet Market",
+            details: "If you're looking for traditional Indian attire, especially silk sarees, Chickpet Market is the place to visit. It is one of the oldest and busiest markets in Bengaluru, offering a wide selection of textiles, jewellery, and traditional Indian clothing.",
+            map: "https://www.google.com/maps/search/chickpet+market+shopping/@12.958346,77.5651973,14z?entry=ttu",
+            image: "/junabazar.svg"
         }
     ]
 };
