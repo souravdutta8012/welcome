@@ -30,7 +30,7 @@ export default function Video() {
     return (
         <>
             <video
-                className="aspect-video mt-2 mb-6 drop-shadow-xl rounded-lg object-contain"
+                className="aspect-video mt-2 mb-6 drop-shadow-xl rounded-lg object-contain w-full"
                 playsInline
                 muted={false}
                 onClick={togglePlay}
