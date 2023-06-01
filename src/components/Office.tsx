@@ -24,7 +24,7 @@ export default function Office() {
                     </Box>
                     <Box>
                         <Box className="relative">
-                            <img src={OfficeData?.image} className="aspect-auto w-full object-fill rounded-lg" />
+                            <img src={OfficeData?.image} className="aspect-auto w-full object-fill rounded-lg" loading="lazy" />
                             {OfficeData?.map ? (
                                 <Box className="absolute bottom-2 right-2">
                                     <a rel="noopener noreferrer" target="_blank" href={OfficeData?.map}>
