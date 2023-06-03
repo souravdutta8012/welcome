@@ -11,7 +11,7 @@ import { getName } from "./util/Function";
 export const Router = (_props: any) => {
   const name = getName();
 
-  const [orientation, setOrientation] = useState<any>(undefined);
+  const [orientation, setOrientation] = useState<string>('portrait');
 
   useEffect(() => {
     checkOrientation();
