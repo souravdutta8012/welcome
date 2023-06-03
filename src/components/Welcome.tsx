@@ -2,7 +2,6 @@ import { useEffect } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import { Avatar, Box, Button, IconButton } from "@mui/material";
 import { DarkMode, LightMode } from "@mui/icons-material";
-import Footer from "./Footer";
 import { useUserState } from "../util/User";
 import { setTheme } from "../util/Function";
 
@@ -25,7 +24,7 @@ export default function Welcome() {
       <Box className="Backdrop-light dark:Backdrop"></Box>
       <Box className="Grad1"></Box>
       <Box className="Grad2 overflow-clip"></Box>
-      <Box className="flex flex-col justify-center items-center text-center gap-10 pt-14">
+      <Box className="flex flex-col justify-center items-center text-center gap-10 pt-10">
         <Box>
           <Avatar alt="Remy Sharp" src={auth.image} className="w-36 h-36" />
         </Box>
@@ -38,7 +37,7 @@ export default function Welcome() {
         </Box>
       </Box>
       <Box className="absolute bottom-0 w-full px-6">
-        <Box className="flex justify-center items-center py-16">
+        <Box className="flex justify-center items-center pb-16">
           <Box className="border-2 border-primary-dark dark:border-primary-light p-2 rounded-lg">
             <IconButton size="small" className="block dark:hidden" onClick={() => setTheme("dark")}>
               <LightMode className="text-3xl text-primary-dark" />
@@ -48,16 +47,13 @@ export default function Welcome() {
             </IconButton>
           </Box>
         </Box>
-        <Box className="flex flex-col justify-center items-center">
+        <Box className="flex flex-col justify-center items-center pb-10">
           <Button
             variant="contained"
             className="w-full h-14 font-semibold text-xl capitalize rounded-lg bg-gradient-to-r from-secondary-purple to-primary-pink dark:from-secondary-blue dark:to-secondary-purple" size="large"
             onClick={next}>
             Next
           </Button>
-        </Box>
-        <Box>
-          <Footer />
         </Box>
       </Box>
     </>
