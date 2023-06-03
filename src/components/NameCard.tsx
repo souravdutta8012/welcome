@@ -36,7 +36,7 @@ export default function NameCard(props: any) {
                     <Box className="flex justify-between items-center gap-5">
                         {city ? (
                             <Box>
-                                <span className="bg-secondary-blue px-2 rounded text-sm font-semibold text-primary-light">{city}</span>
+                                <span className="bg-secondary-blue px-2 py-0.5 rounded text-sm font-semibold text-primary-light">{city}</span>
                             </Box>
                         ) : null}
                         {temp ? (
