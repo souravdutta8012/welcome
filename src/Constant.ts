@@ -8,6 +8,14 @@ export const Identities = [
         video: "/owenmulder.mp4",
     },
     {
+        name: "Jit Saha",
+        firstname: "Jit",
+        lastname: "Saha",
+        email: "sahajit1996@gmail.com",
+        image: "/jitsaha.jpeg",
+        video: "/owenmulder.mp4",
+    },
+    {
         name: "Owen Mulder",
         firstname: "Owen",
         lastname: "Mulder",
