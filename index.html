@@ -13,6 +13,12 @@
 <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
+    <script>
+        async function lock() {
+            await screen.orientation.lock("portrait");
+        };
+        lock();
+    </script>
 </body>
 
 </html>
