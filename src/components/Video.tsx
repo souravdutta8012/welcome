@@ -48,7 +48,6 @@ export default function Video() {
                 onPlay={play}
                 ref={vidRef}
                 autoPlay={(state === 'play' || state === 'unknown')}
-                loop
                 controls
                 controlsList="nofullscreen nodownload noplaybackrate"
                 disablePictureInPicture
