@@ -28,12 +28,12 @@ export default function Welcome() {
         <Box>
           <Avatar alt="Remy Sharp" src={auth.image} className="w-36 h-36" />
         </Box>
-        <Box className="flex flex-col justify-center items-center text-center gap-1">
+        <Box className="flex flex-col justify-center items-center text-center gap-2">
           <Box className="text-3xl font-semibold text-primary-dark dark:text-primary-light">
             {auth.name}
           </Box>
           <Box className="text-xl font-normal text-primary-dark dark:text-primary-light">welcome to</Box>
-          <Box className="text-5xl font-bold text-primary-dark dark:text-primary-light">India</Box>
+          <Box className="text-3xl font-bold text-primary-dark dark:text-primary-light">TCS India</Box>
         </Box>
       </Box>
       <Box className="absolute bottom-0 w-full px-6">
