@@ -6,6 +6,7 @@ import { DoneAll } from "@mui/icons-material";
 import Welcome from "./components/Welcome";
 import Home from "./components/Home";
 import Orientation from "./components/Orientation";
+import Preload from "./components/Preload";
 import { getName } from "./util/Function";
 
 export const Router = (_props: any) => {
@@ -58,6 +59,7 @@ export const Router = (_props: any) => {
               <Route path="/welcome/home/:name?" element={<Home />} />
               <Route path="/welcome/home/:dialogtype/:name?" element={<Home />} />
             </Routes>
+            <Preload />
           </BrowserRouter>
         </>
       ) : (
