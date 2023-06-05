@@ -12,7 +12,7 @@ export default function ActivityCard(props: any) {
                 </Box>
                 <Box>
                     <Box className="relative">
-                        <img src={data?.image} className="aspect-auto w-full object-fill rounded-lg" loading="lazy" />
+                        <img src={data?.image} className="aspect-auto w-full object-fill rounded-lg" />
                         {data?.map ? (
                             <Box className="absolute bottom-2 right-2">
                                 <a rel="noopener noreferrer" target="_blank" href={data?.map}>
