@@ -21,3 +21,10 @@ video::-webkit-media-controls-current-time-display,
 video::-webkit-media-controls-time-remaining-display {
     display: none;
 }
+
+.video-react,
+.video-react-poster,
+.video-react-video {
+    border-radius: 8px !important;
+    background-color: transparent !important;
+}
