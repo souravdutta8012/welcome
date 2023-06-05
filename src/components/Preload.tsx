@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { Box } from "@mui/material";
+import { getName } from "../util/Function";
 import { Identities, Leads, OfficeData, ExploreData, FoodData, ShopData } from "../Constant";
 
 export default function Preload() {
@@ -9,7 +10,10 @@ export default function Preload() {
         let tmp: any = [];
 
         Identities?.forEach((i: any) => {
-            tmp.push(i?.image);
+            if (i?.name?.toLowerCase()?.replaceAll(" ", "") === getName()) {
+                tmp.push(i?.image);
+                tmp.push(i?.video);
+            }
         });
 
         Leads?.forEach((i: any) => {
