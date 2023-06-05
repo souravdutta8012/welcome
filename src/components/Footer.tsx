@@ -4,9 +4,8 @@ export default function Footer() {
 
   return (
     <>
-      <Box className="flex justify-center items-center py-6">
-        <img src="/tcs-light.svg" className="block dark:hidden" />
-        <img src="/tcs-dark.svg" className="hidden dark:block" />
+      <Box className="flex justify-center items-center pb-4 text-sm italic text-primary-gray">
+        tcs - woodside collaboration
       </Box>
     </>
   );

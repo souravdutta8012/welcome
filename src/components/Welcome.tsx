@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import { Avatar, Box, Button, IconButton } from "@mui/material";
 import { DarkMode, LightMode } from "@mui/icons-material";
+import Footer from "./Footer";
 import { useUserState } from "../util/User";
 import { setTheme } from "../util/Function";
 
@@ -47,13 +48,16 @@ export default function Welcome() {
             </IconButton>
           </Box>
         </Box>
-        <Box className="flex flex-col justify-center items-center pb-10">
+        <Box className="flex flex-col justify-center items-center pb-8">
           <Button
             variant="contained"
             className="w-full h-14 font-semibold text-xl capitalize rounded-lg bg-gradient-to-r from-secondary-purple to-primary-pink dark:from-secondary-blue dark:to-secondary-purple" size="large"
             onClick={next}>
             Next
           </Button>
+        </Box>
+        <Box>
+          <Footer />
         </Box>
       </Box>
     </>

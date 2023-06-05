@@ -5,6 +5,7 @@ import CommonDialog from "./CommonDialog";
 import NameCard from "./NameCard";
 import Video from "./Video";
 import Activity from "./Activity";
+import Footer from "./Footer";
 import { useUserState } from "../util/User";
 
 export default function Home() {
@@ -123,6 +124,9 @@ export default function Home() {
 							<Tab className={"capitalize text-lg " + ((tab === 1) ? "font-semibold text-primary-dark dark:text-primary-light" : "text-secondary-gray")} label="Bangalore" />
 						</Tabs>
 						<Activity location={(tab === 0 ? "pune" : "bangalore")} />
+					</Box>
+					<Box>
+						<Footer />
 					</Box>
 				</Box>
 			</Box>
