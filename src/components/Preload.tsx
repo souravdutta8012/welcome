@@ -11,8 +11,8 @@ export default function Preload() {
 
         Identities?.forEach((i: any) => {
             if (i?.name?.toLowerCase()?.replaceAll(" ", "") === getName()) {
-                tmp.push(i?.image);
                 tmp.push(i?.video);
+                tmp.push(i?.image);
             }
         });
 
@@ -49,9 +49,13 @@ export default function Preload() {
     return (
         <>
             <Box>
-                {list?.length && list?.map((item: any, i: number) =>
-                    <img key={i} src={item} hidden />
-                )}
+                {list?.length && list?.map((item: any, i: number) => {
+                    if (item?.includes(".mp4")) {
+                        return (<video key={i} src={item} hidden />)
+                    } else {
+                        return (<img key={i} src={item} hidden loading="lazy" />)
+                    }
+                })}
             </Box>
         </>
     )
