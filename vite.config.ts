@@ -1,5 +1,5 @@
-import { defineConfig } from 'vite'
-import { VitePWA } from 'vite-plugin-pwa'
+import { defineConfig } from 'vite';
+import { VitePWA } from 'vite-plugin-pwa';
 
 export default defineConfig({
   plugins: [
@@ -40,5 +40,14 @@ export default defineConfig({
   ],
   build: {
     outDir: './build'
+  },
+  define: {
+    'process.env': {}
+  },
+  resolve: {
+    alias: {
+      util: 'util/',
+      buffer: 'buffer/',
+    },
   }
 })

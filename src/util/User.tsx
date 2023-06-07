@@ -1,4 +1,5 @@
 import { createContext, useContext, useEffect, useReducer } from "react";
+import { getAdUser } from "../auth/auth-msal-user";
 import { Identities } from "../Constant";
 import { getLight } from "./Function";
 
@@ -31,11 +32,11 @@ export const userReducer = (state: State, action: Action): State => {
     }
 };
 
-const findUser = (name: string) => {
+const findUser = (email: string) => {
     let user = undefined;
     Identities?.forEach((i: any) => {
-        if (i?.name?.toLowerCase()?.replaceAll(" ", "") === name?.toLowerCase().replaceAll(" ", "")) {
-            localStorage.setItem("name", name?.toLowerCase().replaceAll(" ", ""));
+        if (i?.email?.toLowerCase()?.replaceAll(" ", "") === email?.toLowerCase().replaceAll(" ", "")) {
+            localStorage.setItem("name", i?.name?.toLowerCase().replaceAll(" ", ""));
             user = i;
         }
     });
@@ -49,10 +50,8 @@ export const UserProvider = ({ children }: Props) => {
 
     useEffect(() => {
         async function getUser() {
-            let name: any = window?.location?.pathname?.split("/");
-            name = name.pop();
-            name = decodeURIComponent(name);
-            const auth = findUser(name);
+            const user = await getAdUser();
+            const auth = findUser(user?.email);
             if (auth === undefined) return;
             dispatch({ type: "setUserAuth", payload: { auth: auth } });
 

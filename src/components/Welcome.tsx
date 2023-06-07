@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { useNavigate, useParams } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { Avatar, Box, Button, IconButton } from "@mui/material";
 import { DarkMode, LightMode } from "@mui/icons-material";
 import Footer from "./Footer";
@@ -9,14 +9,13 @@ import { setTheme } from "../util/Function";
 export default function Welcome() {
   const { auth } = useUserState();
   const navigate = useNavigate();
-  const { name } = useParams();
 
   useEffect(() => {
-    localStorage.getItem('skipwelcome') === 'true' ? navigate('/welcome/home/' + name) : null;
+    localStorage.getItem('skipwelcome') === 'true' ? navigate('/welcome/home') : null;
   }, []);
 
   const next = () => {
-    navigate('/welcome/home/' + name);
+    navigate('/welcome/home');
     localStorage.setItem('skipwelcome', "true");
   };
 

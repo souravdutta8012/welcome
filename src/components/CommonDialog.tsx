@@ -15,7 +15,7 @@ export default function CommonDialog(props: any) {
     const { open, setopen, data, meta } = props;
 
     const navigate = useNavigate();
-    const { name, dialogtype } = useParams();
+    const { dialogtype } = useParams();
 
     const [height, setHeight] = useState(window.innerHeight - 120);
 
@@ -28,14 +28,14 @@ export default function CommonDialog(props: any) {
     useEffect(() => {
         if (!dialogtype) {
             setopen(false);
-            navigate('/welcome/home/' + name, { replace: true });
+            navigate('/welcome/home', { replace: true });
         }
     }, [dialogtype]);
 
     const dialogClose = () => {
         setopen(false);
         if (data !== 'leadinfo') {
-            navigate('/welcome/home/' + name, { replace: true });
+            navigate('/welcome/home', { replace: true });
         }
     };
 
