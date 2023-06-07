@@ -7,11 +7,8 @@ import Welcome from "./components/Welcome";
 import Home from "./components/Home";
 import Orientation from "./components/Orientation";
 import Preload from "./components/Preload";
-import { getName } from "./util/Function";
 
 export const Router = (_props: any) => {
-  const name = getName();
-
   const [orientation, setOrientation] = useState<string>('portrait');
 
   useEffect(() => {
@@ -54,7 +51,7 @@ export const Router = (_props: any) => {
           />
           <BrowserRouter>
             <Routes>
-              <Route path="/" element={<Navigate to={"/welcome/" + name} />} />
+              <Route path="/" element={<Navigate to={"/welcome"} />} />
               <Route path="/welcome" element={<Welcome />} />
               <Route path="/welcome/home" element={<Home />} />
               <Route path="/welcome/home/:dialogtype" element={<Home />} />
